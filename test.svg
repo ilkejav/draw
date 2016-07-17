@@ -1,0 +1,7 @@
+<svg version="1.1" baseProfile="full" width="1280" height="720" xmlns="http://www.w3.org/2000/svg" >
+	<rect x="0" y="0" width="1280" height="720" fill="#272822" />
+	<polyline points="32 360, 97 442, 163 278, 229 114, 294 360, 360 524, 426 360, 491 196, 557 32, 623 32, 688 442, 754 606, 820 442, 885 196, 951 114, 1017 442, 1082 360, 1148 524, 1214 606, " stroke="#F92672" stroke-width="1" fill="none" />
+	<polyline points="32 524, 97 442, 163 114, 229 114, 294 442, 360 524, 426 442, 491 606, 557 114, 623 442, 688 32, 754 278, 820 442, 885 606, 951 524, 1017 278, 1082 196, 1148 32, 1214 524, " stroke="#89BDFF" stroke-width="1" fill="none" />
+	<path d="M 32 32V 688 H 1248" stroke="#595959" fill="none" />
+	<text x="50%" y="704" fill="#F92672" font-family="Ubuntu Mono" font-size="12" stroke-width="2" stroke="#272822" paint-order="stroke" text-anchor="middle" alignment-baseline="central" >Grabelshpouet</text>
+</svg>
