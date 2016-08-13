@@ -1,0 +1,7 @@
+<svg version="1.1" baseProfile="full" width="1024" height="1024" xmlns="http://www.w3.org/2000/svg" >
+<rect x="0" y="0" width="100%" height="100%" fill="#8080ff" />
+<polygon points="232 232, 792 232, 768 256, 800 224, 224 224, 256 256" fill="#80dbda" />
+<polygon points="792 232, 792 792, 768 768, 800 800, 800 224, 768 256" fill="#da80da" />
+<polygon points="792 792, 232 792, 256 768, 224 800, 800 800, 768 768" fill="#8026da" />
+<polygon points="232 792, 232 232, 256 256, 224 224, 224 800, 256 768" fill="#2580da" />
+</svg>

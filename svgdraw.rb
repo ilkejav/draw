@@ -25,13 +25,13 @@ class SVG_draw
 
   def footer; return "</svg>" end
 
-  def background width, height, color
+  def background color
     name = "rect"
     bkg = [
       ["x", 0],
       ["y", 0],
-      ["width", width],
-      ["height", height],
+      ["width", "100%"],
+      ["height", "100%"],
       ["fill", color],
     ]
     return format.wrap(format.build(name,bkg))
@@ -68,14 +68,48 @@ class SVG_draw
 
   def draw_polyline points, width, height, margin, color
     name = "polyline"
-
-    ply =[
+    ply = [
       ["points", spread_points(width, height, margin, points) ],
       ["stroke", color],
       ["stroke-width", 1],
       ["fill", "none"]
     ]
     return format.wrap(format.build(name,ply))
+  end
+
+  def draw_rect posx, posy, width, height, color
+    name = "rect"
+    rct = [
+      ["x", posx],
+      ["y", posy],
+      ["width", width],
+      ["height", height],
+      ["fill", color]
+    ]
+    return format.wrap(format.build(name,rct))
+  end
+
+  def draw_polygon points, color
+    name = "polygon"
+    rct = [
+      ["points", format.coordinates(points)],
+      ["fill", color]
+    ]
+    return format.wrap(format.build(name,rct))
+  end
+
+  def draw_wire_rect posx, posy, width, height, color
+    name = "rect"
+    rct = [
+      ["x", posx],
+      ["y", posy],
+      ["width", width],
+      ["height", height],
+      ["stroke", color],
+      ["stroke-width", 1],
+      ["fill", "none"]
+    ]
+    return format.wrap(format.build(name,rct))
   end
 
   def spread_points width, height, margin, points
@@ -89,7 +123,6 @@ class SVG_draw
   def draw_grid width, height, margin, vdiv, hdiv
     
     vdiv.times do
-
     end
 
     grd = [

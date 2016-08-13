@@ -20,4 +20,10 @@ class Colors
   def yellow_dark; return "#75715E" end
   def yellow_light; return "#F8F8F2" end 
 
+  def normal; return "#8080ff" end
+  def up; return "#80dbda" end
+  def down; return "#8026da" end
+  def left; return "#2580da" end
+  def right; return "#da80da" end
+
 end

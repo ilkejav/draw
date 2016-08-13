@@ -24,19 +24,35 @@ class Draw
     data1 = [4,3,5,7,4,2,4,6,8,8,3,1,3,6,7,3,4,2,1]
     data2 = [2,3,7,7,3,2,3,1,7,3,8,5,3,1,2,5,6,8,2]
 
-    drawing = [
-      draw.header(width, height),
-      draw.background(width, height, colors.gray_dark),
-      draw.draw_polyline(data1, width, height, margin, colors.magenta),
-      draw.draw_polyline(data2, width, height, margin, colors.blue_light),
-      draw.draw_scale(width, height, margin, colors.gray_lightest),
-      draw.draw_text("Grabelshpouet", colors.magenta,"50%", height-margin/2, colors.gray_dark),
-      draw.footer
-    ]
+    #puts param
 
-    write_to_file("Apps/draw/","test.svg", assemble(drawing))
-    
-    return "done!"
+    case param.first.strip.downcase
+    when "graph"
+        drawing = [
+        draw.header(width, height),
+        draw.background(width, height, colors.gray_dark),
+        draw.draw_polyline(data1, width, height, margin, colors.magenta),
+        draw.draw_polyline(data2, width, height, margin, colors.blue_light),
+        draw.draw_scale(width, height, margin, colors.gray_lightest),
+        draw.draw_text("Grabelshpouet", colors.magenta,"50%", height-margin/2, colors.gray_dark),
+        draw.footer
+      ]
+      write_to_file("Apps/draw/","test.svg", assemble(drawing))
+      return "done!"
+
+    when "globe"
+      return "globe!"
+    when "normals"
+      load("Apps/draw/normal_map.rb")
+      normals = Normal_map.new
+      map = normals.create(1024, 1024)
+      write_to_file("Apps/draw/","normals.svg", assemble(map))
+      return "done normals!"
+    else
+      return "please specify something to draw"
+    end
+
+    #return "done!"
 
   end
 

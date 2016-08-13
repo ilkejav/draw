@@ -20,4 +20,17 @@ class SVG_format
 
   end
 
+  def coordinates list
+    
+    coords = ""
+    
+    (0..list.length-1).step(2) do |i|
+      coords << "#{list[i]} #{list[i+1]}, "
+    end
+    
+    coords = coords.rstrip[0...-1] #"-1" removes the last comma
+    return coords
+    
+  end
+
 end
