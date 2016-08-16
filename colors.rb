@@ -25,5 +25,10 @@ class Colors
   def down; return "#8026da" end
   def left; return "#2580da" end
   def right; return "#da80da" end
+  
+  def up_right; return "#cacaca" end
+  def up_left; return "#36caca" end
+  def down_left; return "#3636ca" end
+  def down_right; return "#ca36ca" end
 
 end

@@ -75,6 +75,3 @@ class Draw
   end
 
 end
-
-
-      

@@ -10,6 +10,12 @@ class SVG_draw
 
   def format; return @format end
 
+  def canvas width, height, color
+    content.unshift( draw.background(color) )
+    content.unshift( draw.header(width, height) )
+    content.push( draw.footer )
+  end
+
   def header width, height
     name = "svg"
     hdr = [
@@ -112,13 +118,13 @@ class SVG_draw
     return format.wrap(format.build(name,rct))
   end
 
-  def spread_points width, height, margin, points
-    pts = ""
-    points.each_with_index do |point, index|
-      pts += "#{margin + (index*(width-margin))/points.count} #{(height-margin)-(point*(height-margin*2))/points.max}, "
-    end
-    return pts
-  end
+  # def spread_points width, height, margin, points
+  #   pts = ""
+  #   points.each_with_index do |point, index|
+  #     pts += "#{margin + (index*(width-margin))/points.count} #{(height-margin)-(point*(height-margin*2))/points.max}, "
+  #   end
+  #   return pts
+  # end
 
   def draw_grid width, height, margin, vdiv, hdiv
     

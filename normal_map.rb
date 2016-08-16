@@ -12,25 +12,18 @@ class Normal_map
 	def colors; return @colors end
 
 	def create width, height
-		# drawing = [
-  #       draw.header(width, height),
-  #       draw.background(colors.normal),
-  #       draw.draw_rect(230,145,512,256,colors.down),
-  #       draw.draw_wire_rect(225,128,48,64,"white"),
-  #       # draw.draw_polygon([335,345,56,123,465,32,56,234,657,23], colors.right),
-  #       draw.draw_polygon([335,345,56,123,465,32,56,234,657,23], colors.right),
-  #       draw.footer
-  #     ]
-
-	  drawing = brick(256,256,512,512,32,24)
+		drawing = []
+	  drawing.push(box(512,512,256,256,32,24))
+	  drawing.push(brick(256,256,256,256,32,24,24,0.2))
+	  
 	  drawing.unshift( draw.background(colors.normal) )
 	  drawing.unshift( draw.header(width, height) )
 	  drawing.push( draw.footer )
 		
-		return drawing
+		return drawing.flatten
 	end
 
-	def brick posx, posy, width, height, bevel, bleed
+	def box posx, posy, width, height, bevel, bleed
 		points = {
 			:topleft => [posx, posy],
 			:topright => [posx+width, posy],
@@ -81,6 +74,126 @@ class Normal_map
       draw.draw_polygon(up,colors.up),
       draw.draw_polygon(right,colors.right),
       draw.draw_polygon(down,colors.down),
+      draw.draw_polygon(left,colors.left)
+		]
+
+		return drawing
+	end
+
+	def brick posx, posy, width, height, bevel, bleed, chamfer, randomness
+		rando = chamfer * randomness
+		points = {
+			:topleft => {
+				:corner => { :x => posx-bleed																		,:y => posy-bleed																		},
+				:bleed1 => { :x => posx+bevel+chamfer	 													,:y => posy-bleed																		},
+				:bleed2 => { :x => posx-bleed	 																	,:y => posy+bevel+chamfer														},
+				:edge1 =>  { :x => posx+bevel+chamfer	 													,:y => posy 																				},
+				:edge2 =>  { :x => posx	 																				,:y => posy+bevel+chamfer														},
+				:bevel1 => { :x => posx+bevel+chamfer+rand(-rando..rando)				,:y => posy+bevel+rand(-rando..rando) 							},
+				:bevel2 => { :x => posx+bevel+rand(-rando..rando)	 							,:y => posy+bevel+chamfer+rand(-rando..rando)				}},
+			:topright => {
+				:corner => { :x => posx+width+bleed	 														,:y => posy-bleed 																	},
+				:bleed1 => { :x => posx+width+bleed	 														,:y => posy+bevel+chamfer														},
+				:bleed2 => { :x => posx+width-bevel-chamfer											,:y => posy-bleed 																	},
+				:edge1 =>  { :x => posx+width	 																	,:y => posy+bevel+chamfer														},
+				:edge2 =>  { :x => posx+width-bevel-chamfer											,:y => posy 																				},
+				:bevel1 => { :x => posx+width-bevel+rand(-rando..rando)	 				,:y => posy+bevel+chamfer+rand(-rando..rando)				},
+				:bevel2 => { :x => posx+width-bevel-chamfer+rand(-rando..rando)	,:y => posy+bevel+rand(-rando..rando) 							}},
+			:bottomleft => {
+				:corner => { :x => posx-bleed	 																	,:y => posy+height+bleed 														},
+				:bleed1 => { :x => posx-bleed	 																	,:y => posy+height-bevel-chamfer										},
+				:bleed2 => { :x => posx+bevel+chamfer	 													,:y => posy+height+bleed 														},
+				:edge1 =>  { :x => posx	 																				,:y => posy+height-bevel-chamfer 										},
+				:edge2 =>  { :x => posx+bevel+chamfer	 													,:y => posy+height 																	},
+				:bevel1 => { :x => posx+bevel+rand(-rando..rando)	 							,:y => posy+height-bevel-chamfer+rand(-rando..rando)},
+				:bevel2 => { :x => posx+bevel+chamfer+rand(-rando..rando)	 			,:y => posy+height-bevel+rand(-rando..rando) 				}},
+			:bottomright => {
+				:corner => { :x => posx+width+bleed	 														,:y => posy+height+bleed 														},
+				:bleed1 => { :x => posx+width-bevel-chamfer											,:y => posy+height+bleed 														},
+				:bleed2 => { :x => posx+width+bleed															,:y => posy+height-bevel-chamfer										},
+				:edge1 =>  { :x => posx+width-bevel-chamfer											,:y => posy+height 																	},
+				:edge2 =>  { :x => posx+width	 																	,:y => posy+height-bevel-chamfer										},
+				:bevel1 => { :x => posx+width-bevel-chamfer+rand(-rando..rando)	,:y => posy+height-bevel+rand(-rando..rando) 				},
+				:bevel2 => { :x => posx+width-bevel+rand(-rando..rando)	 				,:y => posy+height-bevel-chamfer+rand(-rando..rando)}}
+		}
+
+		top_left = [
+			points.dig(:topleft, :corner, :x)			,points.dig(:topleft, :corner, :y),
+			points.dig(:topleft, :bleed1, :x)			,points.dig(:topleft, :bleed1, :y),
+			points.dig(:topleft, :edge1, :x)			,points.dig(:topleft, :edge1, :y),
+			points.dig(:topleft, :bevel1, :x)			,points.dig(:topleft, :bevel1, :y),
+			points.dig(:topleft, :bevel2, :x)			,points.dig(:topleft, :bevel2, :y),
+			points.dig(:topleft, :edge2, :x)			,points.dig(:topleft, :edge2, :y),
+			points.dig(:topleft, :bleed2, :x)			,points.dig(:topleft, :bleed2, :y)
+		]
+		top_right = [
+			points.dig(:topright, :corner, :x)		,points.dig(:topright, :corner, :y),
+			points.dig(:topright, :bleed1, :x)		,points.dig(:topright, :bleed1, :y),
+			points.dig(:topright, :edge1, :x)			,points.dig(:topright, :edge1, :y),
+			points.dig(:topright, :bevel1, :x)		,points.dig(:topright, :bevel1, :y),
+			points.dig(:topright, :bevel2, :x)		,points.dig(:topright, :bevel2, :y),
+			points.dig(:topright, :edge2, :x)			,points.dig(:topright, :edge2, :y),
+			points.dig(:topright, :bleed2, :x)		,points.dig(:topright, :bleed2, :y)
+		]
+		bottom_left = [
+			points.dig(:bottomleft, :corner, :x)	,points.dig(:bottomleft, :corner, :y),
+			points.dig(:bottomleft, :bleed1, :x)	,points.dig(:bottomleft, :bleed1, :y),
+			points.dig(:bottomleft, :edge1, :x)		,points.dig(:bottomleft, :edge1, :y),
+			points.dig(:bottomleft, :bevel1, :x)	,points.dig(:bottomleft, :bevel1, :y),
+			points.dig(:bottomleft, :bevel2, :x)	,points.dig(:bottomleft, :bevel2, :y),
+			points.dig(:bottomleft, :edge2, :x)		,points.dig(:bottomleft, :edge2, :y),
+			points.dig(:bottomleft, :bleed2, :x)	,points.dig(:bottomleft, :bleed2, :y)
+		]
+		bottom_right = [
+			points.dig(:bottomright, :corner, :x)	,points.dig(:bottomright, :corner, :y),
+			points.dig(:bottomright, :bleed1, :x)	,points.dig(:bottomright, :bleed1, :y),
+			points.dig(:bottomright, :edge1, :x)	,points.dig(:bottomright, :edge1, :y),
+			points.dig(:bottomright, :bevel1, :x)	,points.dig(:bottomright, :bevel1, :y),
+			points.dig(:bottomright, :bevel2, :x)	,points.dig(:bottomright, :bevel2, :y),
+			points.dig(:bottomright, :edge2, :x)	,points.dig(:bottomright, :edge2, :y),
+			points.dig(:bottomright, :bleed2, :x)	,points.dig(:bottomright, :bleed2, :y)
+		]
+		top = [
+			points.dig(:topleft, :bleed1, :x)	,points.dig(:topleft, :bleed1, :y),
+			points.dig(:topright, :bleed2, :x)	,points.dig(:topright, :bleed2, :y),
+			points.dig(:topright, :edge2, :x)	,points.dig(:topright, :edge2, :y),
+			points.dig(:topright, :bevel2, :x)	,points.dig(:topright, :bevel2, :y),
+			points.dig(:topleft, :bevel1, :x)	,points.dig(:topleft, :bevel1, :y),
+			points.dig(:topleft, :edge1, :x)	,points.dig(:topleft, :edge1, :y)
+		]
+		right = [
+			points.dig(:topright, :bleed1, :x)	,points.dig(:topright, :bleed1, :y),
+			points.dig(:bottomright, :bleed2, :x)	,points.dig(:bottomright, :bleed2, :y),
+			points.dig(:bottomright, :edge2, :x)	,points.dig(:bottomright, :edge2, :y),
+			points.dig(:bottomright, :bevel2, :x)	,points.dig(:bottomright, :bevel2, :y),
+			points.dig(:topright, :bevel1, :x)	,points.dig(:topright, :bevel1, :y),
+			points.dig(:topright, :edge1, :x)	,points.dig(:topright, :edge1, :y)
+		]
+		left = [
+			points.dig(:bottomright, :bleed1, :x)	,points.dig(:bottomright, :bleed1, :y),
+			points.dig(:bottomleft, :bleed2, :x)	,points.dig(:bottomleft, :bleed2, :y),
+			points.dig(:bottomleft, :edge2, :x)	,points.dig(:bottomleft, :edge2, :y),
+			points.dig(:bottomleft, :bevel2, :x)	,points.dig(:bottomleft, :bevel2, :y),
+			points.dig(:bottomright, :bevel1, :x)	,points.dig(:bottomright, :bevel1, :y),
+			points.dig(:bottomright, :edge1, :x)	,points.dig(:bottomright, :edge1, :y)
+		]
+		bottom = [
+			points.dig(:bottomleft, :bleed1, :x)	,points.dig(:bottomleft, :bleed1, :y),
+			points.dig(:topleft, :bleed2, :x)	,points.dig(:topleft, :bleed2, :y),
+			points.dig(:topleft, :edge2, :x)	,points.dig(:topleft, :edge2, :y),
+			points.dig(:topleft, :bevel2, :x)	,points.dig(:topleft, :bevel2, :y),
+			points.dig(:bottomleft, :bevel1, :x)	,points.dig(:bottomleft, :bevel1, :y),
+			points.dig(:bottomleft, :edge1, :x)	,points.dig(:bottomleft, :edge1, :y)
+		]
+
+		drawing = [
+      draw.draw_polygon(top_left,colors.up_left),
+      draw.draw_polygon(top,colors.up),
+      draw.draw_polygon(top_right,colors.up_right),
+      draw.draw_polygon(right,colors.right),
+      draw.draw_polygon(bottom_left,colors.down_left),
+      draw.draw_polygon(bottom,colors.down),
+      draw.draw_polygon(bottom_right,colors.down_right),
       draw.draw_polygon(left,colors.left)
 		]
 
