@@ -1,0 +1,74 @@
+{
+  "shape0": {
+    "x": 5,
+    "y": 6,
+    "width": 184,
+    "height": 93
+  },
+  "shape1": {
+    "x": 198,
+    "y": 6,
+    "width": 185,
+    "height": 93
+  },
+  "shape2": {
+    "x": 393,
+    "y": 6,
+    "width": 185,
+    "height": 93
+  },
+  "shape3": {
+    "x": 587,
+    "y": 6,
+    "width": 185,
+    "height": 93
+  },
+  "shape4": {
+    "x": 782,
+    "y": 6,
+    "width": 93,
+    "height": 93
+  },
+  "shape5": {
+    "x": 884,
+    "y": 6,
+    "width": 93,
+    "height": 93
+  },
+  "shape6": {
+    "x": 517,
+    "y": 108,
+    "width": 93,
+    "height": 93
+  },
+  "shape7": {
+    "x": 414,
+    "y": 108,
+    "width": 93,
+    "height": 93
+  },
+  "shape8": {
+    "x": 312,
+    "y": 108,
+    "width": 93,
+    "height": 93
+  },
+  "shape9": {
+    "x": 209,
+    "y": 108,
+    "width": 94,
+    "height": 93
+  },
+  "shape10": {
+    "x": 107,
+    "y": 108,
+    "width": 93,
+    "height": 93
+  },
+  "shape11": {
+    "x": 5,
+    "y": 108,
+    "width": 93,
+    "height": 93
+  }
+}

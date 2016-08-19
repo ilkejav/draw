@@ -1,5 +1,7 @@
-require_relative("svgdraw.rb")
-require_relative("colors.rb")
+require_relative "svgdraw.rb"
+require_relative "draw_uvs.rb"
+require_relative "colors.rb"
+require 'json'
 
 class Draw
 
@@ -48,6 +50,19 @@ class Draw
       map = normals.create(1024, 1024)
       write_to_file("Apps/draw/","normals.svg", assemble(map))
       return "done normals!"
+    when "read"
+      load("Apps/draw/svgread.rb")
+      # payload
+      reader = SVG_read.new
+      content = reader.read
+      write_to_file("Apps/draw/","svg_read.json", JSON.pretty_generate(content))
+      # puts content
+      return "done reading!"
+    when "uvs"
+      uv_mapper = Draw_Uvs.new
+      uvs = uv_mapper.create(1024,1024)
+      write_to_file("Apps/draw/","uvs.svg", assemble(uvs))
+      return "done uvs!"
     else
       return "please specify something to draw"
     end

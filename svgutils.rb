@@ -4,18 +4,31 @@ class SVG_utils
 
 	end
 
-	def lerp posx1, posy1, posx2, posy2, progress
-
+	def lerp_2D pos1, pos2, progress
+		coords = []
+		coords[0] = (1 - progress) * pos1[0] + progress * pos2[0]
+		coords[1] = (1 - progress) * pos1[1] + progress * pos2[1]
+		return coords
 	end
 
-	def spread_random posx1, posy1, posx2, posy2, points, randomness
-
+	def spread_random pos1, pos2, quantity, random
+		pts = []
+		pts.push( pos1 )
+    (1..quantity-1).each do |n|
+			coord = lerp_2D( pos1, pos2, n.to_f/quantity )
+    	pts.push([
+    		coord.first + rand(-random..random),
+    		coord.last + rand(-random..random)
+    	])
+    end
+		pts.push( pos2 )
+    return pts
 	end
 
-	def spread_linear width, height, margin, points
-    pts = ""
-    points.each_with_index do |point, index|
-      pts += "#{margin + (index*(width-margin))/points.count} #{(height-margin)-(point*(height-margin*2))/points.max}, "
+	def spread_linear pos1, pos2, quantity
+    pts = []
+    (0..quantity).each do |n|
+    	pts.push( lerp_2D( pos1, pos2, n.to_f/quantity ) )
     end
     return pts
   end

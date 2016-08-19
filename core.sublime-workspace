@@ -1,0 +1,730 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"posy",
+				"posy1"
+			],
+			[
+				"pos",
+				"posx1"
+			],
+			[
+				"po",
+				"posy2"
+			],
+			[
+				"bottom",
+				"bottomleft"
+			],
+			[
+				"top",
+				"topleft"
+			],
+			[
+				"draw",
+				"draw_polygon"
+			],
+			[
+				"Vecto",
+				"Vector2"
+			],
+			[
+				"Vector",
+				"Vector3"
+			],
+			[
+				"c",
+				"currentIndex"
+			],
+			[
+				"Curr",
+				"CurrentChapterLength"
+			],
+			[
+				"Ra",
+				"RandomPoint"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"rea",
+				"realInside"
+			],
+			[
+				"real",
+				"realRect"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"Vect",
+				"Vector2"
+			],
+			[
+				"rese",
+				"ResetEverything"
+			],
+			[
+				"Don",
+				"DontTriggerCameraMove"
+			],
+			[
+				"Flip",
+				"Step5FlipCubes"
+			],
+			[
+				"Cb",
+				"Cubes"
+			],
+			[
+				"Step1C",
+				"Step1CubeFlip"
+			],
+			[
+				"Curren",
+				"CurrentChapter"
+			],
+			[
+				"Ai",
+				"Animator"
+			],
+			[
+				"Cu",
+				"CurrentStep"
+			],
+			[
+				"Vectr",
+				"Vector3"
+			],
+			[
+				"B",
+				"bricktrons"
+			],
+			[
+				"ray",
+				"rayDistance"
+			],
+			[
+				"Open",
+				"OpenStatus"
+			],
+			[
+				"Ope",
+				"OpenStatus"
+			],
+			[
+				"Time",
+				"TimeToPiston"
+			],
+			[
+				"Anima",
+				"AnimationCurve"
+			],
+			[
+				"mi",
+				"midPoint"
+			],
+			[
+				"o",
+				"objects"
+			],
+			[
+				"end",
+				"endPoint"
+			],
+			[
+				"Tr",
+				"transform"
+			],
+			[
+				"A",
+				"ApplyForceTo"
+			],
+			[
+				"rec",
+				"Recoil"
+			],
+			[
+				"re",
+				"recoilFactor"
+			],
+			[
+				"pu",
+				"pushing"
+			],
+			[
+				"up",
+				"UpPiston"
+			],
+			[
+				"cu",
+				"currentValue"
+			],
+			[
+				"pus",
+				"pushCurve"
+			],
+			[
+				"Up",
+				"UpPiston"
+			],
+			[
+				"ex",
+				"expandLeft"
+			],
+			[
+				"exp",
+				"expandUp"
+			],
+			[
+				"in",
+				"inputThreshold"
+			],
+			[
+				"distac",
+				"distance"
+			],
+			[
+				"transfo",
+				"transform"
+			],
+			[
+				"transfomr",
+				"Transform"
+			],
+			[
+				"t",
+				"Transform"
+			],
+			[
+				"sprite",
+				"spritePairs"
+			],
+			[
+				"G",
+				"GetComponent"
+			],
+			[
+				"get",
+				"getSpriteArray"
+			],
+			[
+				"g",
+				"GameObject"
+			],
+			[
+				"_",
+				"_end"
+			],
+			[
+				"a",
+				"AngleElevationAuZenith"
+			],
+			[
+				"e",
+				"Eloignement"
+			],
+			[
+				"Rot",
+				"RotatedVectorHoriz"
+			],
+			[
+				"v",
+				"Vector3"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "svg_read",
+			"settings":
+			{
+				"buffer_size": 1020,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "svgutils.rb",
+			"settings":
+			{
+				"buffer_size": 719,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Github/core"
+	],
+	"file_history":
+	[
+		"/C/Github/core/Apps/draw/svg_read",
+		"/C/Github/core/Apps/draw/svgdraw.rb",
+		"/C/Github/core/Apps/draw/svgformat.rb",
+		"/C/Users/germain/Desktop/NormalMapSVG.xml",
+		"/C/Github/core/Apps/draw/normals.svg",
+		"/C/Github/core/Apps/draw/colors.rb",
+		"/C/Github/core/core.rb",
+		"/C/Users/germain/Desktop/Recherche candidats campus ADN.md",
+		"/C/Users/germain/Desktop/Rectangle 1.svg",
+		"/C/Users/germain/Desktop/Bwarg.lang",
+		"/C/Users/germain/Work/castlestory-game/Info/UGC/Maps/NewMap_61a55eaa-d735-4c28-9daa-490950f4a685/meta.json",
+		"/C/Users/germain/Desktop/Scoreboard.prefab",
+		"/C/Users/germain/Desktop/test.svg",
+		"/S/All/GameAnalyticsDownloadLink.txt",
+		"/C/Users/germain/Desktop/6969-2014-10-29-0,379.json",
+		"/C/Users/germain/Work/castlestory-game/Info/UGC/Maps/Stepping Stones/meta.json",
+		"/C/Users/germain/Work/castlestory-game/Info/UGC/Maps/Plateau mont-royal v2/meta.json",
+		"/C/Users/germain/Work/castlestory-game/Info/Saves/CrashSalvaged/meta.json",
+		"/C/Users/Public/Desktop/Google Chrome.lnk",
+		"/C/Users/germain/Desktop/Castle Story/BuildEditor/Info/Lua/gameplayTest.lua",
+		"/C/Users/germain/Desktop/Castle Story/Info/Lua/gameplayTest.lua",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/conquest/config.lua",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/conquest/clientside.lua",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/test.lua",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/Left.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/Super Sampling (SSAA)/SuperSampling_SSAA.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Resources/BigIsland/Terrain2.shader",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/LineOfSight/NewSurfaceShader.shader",
+		"/D/Dropbox (Personal)/La Guilde/Video lancement de presse/La Guilde - Vidéo lancement de presse/Assets/Director.js",
+		"/D/Dropbox (Personal)/La Guilde/Video lancement de presse/La Guilde - Vidéo lancement de presse/Assets/LogoCloud.js",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/Builder/Menu/CollapsableMenu.cs",
+		"/C/Program Files (x86)/Steam/SteamApps/common/Castle Story/Info/Sauvegarde/GermainRecord3/meta.json",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/AnimsAndStuff/MenuParallaxB.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Input/WorldEditor/CreateIslandBrush.cs",
+		"/C/Users/germain/Work/castlestory-game/Info/Workshop/683161419.json",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/conquest/Descriptor.json",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/conquest/Presets/Easy.json",
+		"/D/Dropbox (Personal)/La Guilde/Video lancement de presse/La Guilde - Vidéo lancement de presse/Assets/TriggerCameraShake.js",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/BrixProjet/Assets/Resources/Scripts/Scripts - Brixtron/Brixtron.js",
+		"/D/Dropbox (Personal)/La Guilde/Video lancement de presse/La Guilde - Vidéo lancement de presse/Assets/TriggerCameraShake.cs",
+		"/C/Users/germain/AppData/Local/Unity/Editor/Editor.log",
+		"/D/Dropbox (Personal)/La Guilde/Video lancement de presse/La Guilde - Vidéo lancement de presse/Assets/SendGo.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/CorruptronAnimations/CorruptronShader.shader",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/BrixProjet/Assets/FalloffBumpDiffuseEmissive.shader",
+		"/C/Users/germain/Work/castlestory-game/Assets/Resources/BigIsland/NewSurfaceShader.shader",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/Nothing.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/RightLeft.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/Top.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/TopLeft.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/TopRightLeft.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/TopRight.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/TopRight.anim.meta",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/TempGermain/MainMenu/Right.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/adwawdawd.shader",
+		"/C/Users/germain/Work/castlestory-game/logs/unity.log",
+		"/C/Users/germain/Work/castlestory-game/Info/Maps/PlateauMTL/trees.json",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/AI/Locomotion4.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/AI/Profession.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/AI/Corruptron.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/Shaders/FalloffBumpDiffuseCutout.shader",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/Assets/Standard Assets/Brix/Input/CameraScript.cs",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/Info/Saves/JumpOffBigIsland/meta.json",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/Info/Saves/Grabelshpouet/meta.json",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/BrixProjet/Assets/Resources/Scripts/Scripts - MegaVoxel/MegaVoxel.js",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/Info/Saves/BigIslandMinitron2/meta.json",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/Info/Saves/BigIslandMinitronThrow/meta.json",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/AI/Nodes/CombatNode.cs",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/logs/unity.log",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/Info/logging.xml",
+		"/C/Users/germain/Work/castlestory-game - TempCopy/Info/Saves/Chien/meta.json",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/AI/Projects/Projects/Raid/RaidProject.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Legacy/ObjetsDynamiques/Cristal/DynamicGlow.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Legacy/ObjetsDynamiques/Cristal/CrystalDriver.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Legacy/ObjetsDynamiques/Cristal/CristalDriverVisuel.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Legacy/ObjetsDynamiques/Cristal/CrystalVisuals.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/Biftron/Combat.meta",
+		"/C/Users/germain/Work/castlestory-game/Assets/Resources/Textures/UI/ClickOnMining.png.meta",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/Shaders/Crystal_Old2.shader",
+		"/C/Users/germain/Work/castlestory-game/CHANGELOG.md",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Aspects/ProgressionAspect.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/Bricktron2/Props/FalloffBumpDiffuse.shader",
+		"/C/Program Files/Unity/Editor/Data/CGIncludes/UnityCG.cginc",
+		"/C/Program Files/Unity/Editor/Data/CGIncludes/AutoLight.cginc",
+		"/C/Program Files/Unity/Editor/Data/CGIncludes/UnityPBSLighting.cginc",
+		"/C/Program Files/Unity/Editor/Data/CGIncludes/UnityShaderVariables.cginc",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/BrixProjet/Assets/FalloffBumpDiffuseSpecular.shader",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Audio/ProfessionAudio.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Plugins/Rewired/Internal/Data/Controllers/HardwareMaps/Joysticks/SaitekProFlightTPMPanel.asset",
+		"/C/Users/germain/Work/castlestory-game/Library/ProjectSettings.asset",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/Fonts/Proxima Nova/ProximaNova-Regular.otf",
+		"/C/Users/germain/Work/castlestory-game/Assets/Plugins.meta",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/AI/Navigation.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/AI/VoxelPresence.cs",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/Conquest/ui.lua",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/Sandbox/ui.lua",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/Invasion/invasion_ui.lua",
+		"/C/Users/germain/Work/castlestory-game/Info/Lua/Gamemodes/Tutorial/ui.lua",
+		"/C/Users/germain/Work/unifit/Assets/Scripts/ShapeEndsLevel.cs",
+		"/C/Users/germain/Work/unifit/Assets/Scripts/Player.cs",
+		"/C/Users/germain/Work/unifit/Assets/Scripts/FollowsObject.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Input/CameraScript.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/smcs.rsp",
+		"/C/Users/germain/Work/castlestory-game/Assets/gmcs.rsp",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Components/LocalFactionVision.cs",
+		"/C/Users/germain/Work/unifit/Assets/Scripts/ObjectsGradient.js",
+		"/C/Users/germain/Work/unifit/Assets/FalloffBumpDiffuseEmissive.shader",
+		"/C/Users/germain/Work/unifit/Assets/ColorAnimator.js",
+		"/C/Users/germain/Work/unifit/Assets/WiggleHorizontal.anim.meta",
+		"/C/Users/germain/Work/unifit/Assets/WiggleHorizontal.anim",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/Scripts/ContainerMultiplayerHostOrJoinPopulator.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/Scripts/ContainerBindingsPopulator.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/BreadBar/BreadBarDriver.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/BreadBar/BreadBarCrumbContext.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Sonic Ether/SESSAO/Editor/SESSAOEditor.cs",
+		"/C/Users/germain/Work/castlestory-game/Resources/unity_builtin_extra",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/AnimsAndStuff/SplashScreen.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Components/LodMaterialList.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/OverHeadDisplay/OverheadDisplay.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/InputModeDisplay/InputModeDisplay.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Damage/PlacedBlockDamageReceiver.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Components/ExplosionGameplay.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Engine/Blocks/MeshSelector/DefaultBlockMeshSelector.cs",
+		"/C/Users/germain/AppData/Local/Castle Story Prototype/Logs/unity.log",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/Shaders/Crystal_TwoTones.shader",
+		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Damage/TerrainDamageReceiver.cs",
+		"/C/Users/germain/Work/castlestory-game/Assets/BlueprintIcon.shader",
+		"/C/Users/germain/Work/castlestory-game/Assets/IndexedResources/Shaders/ScreenSpaceTiled.shader",
+		"/C/Users/germain/Work/castlestory-game/Assets/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeInspector.cs"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			".js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"//path",
+			"]]],\n",
+			"corners[:bottomleft].last",
+			"corners[:bottomleft].first",
+			"corners[:topright].last",
+			"corners[:topright].first",
+			"corners[:topleft].last",
+			"corners[:topleft].first",
+			"chamfer",
+			"return",
+			"CameraRig.SetTrigger(\"Go\");",
+			"SendTriggerToManette",
+			"Test",
+			"?",
+			";\n",
+			"switch",
+			"Ribbon/",
+			"Ribbon",
+			"Offset",
+			"CamVitesse",
+			"delta",
+			"VitesseDeplacement",
+			"_CutOff",
+			"_Cutoff",
+			"traps",
+			"FlameSize",
+			"LeftFlame",
+			"TopFlame",
+			"flame",
+			"flam",
+			"material",
+			"offSet",
+			"offset",
+			"offSet",
+			"limites",
+			"castleGrayColor",
+			"Color",
+			"castleGrayColor",
+			"BreadBarCrumb",
+			"castleGrayColor",
+			"Color",
+			"tangent",
+			"Corner",
+			"List",
+			"corner",
+			"Background",
+			"%",
+			"Background",
+			"BackgroundTop",
+			"tangent",
+			"phong",
+			"blinn",
+			"tangent",
+			"UnpackNormal",
+			"GetComponentInChildren",
+			"PistonCooldown",
+			"FirePiston",
+			"PistonCooldown",
+			"FirePiston",
+			";\n",
+			"IconKeys.MoveToObject",
+			"IconKeys.MoveToPosition",
+			"MoveToPosition",
+			"preferredHeight",
+			"ZWrite",
+			"ztest",
+			"bottom",
+			";\n",
+			"spec",
+			"picker",
+			"spawn",
+			"impact",
+			"impulse",
+			"heightmapMode",
+			"multiplicateur",
+			"{\n",
+			"name",
+			"Bric",
+			"ref",
+			"name",
+			"groupe",
+			"\"name\"",
+			"plugs",
+			"/\n",
+			";\n",
+			"MeshCombineOuvrier",
+			"ArbreAff",
+			"GameFactorySettings",
+			"displayCurseur",
+			"Neo",
+			"time",
+			"c:\\\\_retarget\\\\assets\\\\sut\\\\_tex",
+			"inactiveanim"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"posy+height",
+			"posx",
+			"posy",
+			"posx+width",
+			"posy",
+			"posx",
+			"_CutoffGwrd",
+			"IconKeys.Missing",
+			"c:\\\\temp"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "svg_read",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "svgutils.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "core.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"combatno",
+				"Assets\\Standard Assets\\Brix\\Game\\AI\\Nodes\\CombatNode.cs"
+			],
+			[
+				"profess",
+				"Assets\\Standard Assets\\Brix\\Game\\AI\\Profession.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
