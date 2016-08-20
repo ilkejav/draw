@@ -1,13 +1,15 @@
 require "nokogiri"
 
 class SVG_read
-	def initialize
-    @data = Nokogiri::XML(File.open("Apps/draw/Rectangle 1.svg"))
+	
+	def initialize 
+    
   end
 
-  def data; return @data end
+  # def data; return @data end
 
-	def read
+	def read path, file
+    data = Nokogiri::XML(File.open("#{path}/#{file}"))
     
     import = data.css("//path").attr("d").to_s.split("Z")
   	
@@ -16,8 +18,6 @@ class SVG_read
     import.each do |x|
 				shapes << x.split(/(?=[HVhv])/)
 		end
-
-		# p shapes
 		
 		doc = {}
 		current_pos = []
@@ -84,7 +84,7 @@ class SVG_read
 
 			end
 
-			puts "#{position} #{dimensions}"
+			# puts "#{position} #{dimensions}"
 			# puts "#{dimensions}"
 
 			doc["shape#{shape_index}"] = {

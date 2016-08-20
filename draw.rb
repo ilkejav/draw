@@ -16,60 +16,79 @@ class Draw
 
   def draw; return @draw end
   def colors; return @colors end
-
-  def width; return 1280 end
-  def height; return 720 end
-  def margin; return 32 end
   
   def run param = nil
 
-    data1 = [4,3,5,7,4,2,4,6,8,8,3,1,3,6,7,3,4,2,1]
-    data2 = [2,3,7,7,3,2,3,1,7,3,8,5,3,1,2,5,6,8,2]
+    action = param.first.strip.downcase # gets first argument in param
+    filepath = param[1].strip.downcase # gets second argument in param 
+    
+    file = File.basename(filepath) # gets the file name with the extension
+    name = File.basename(filepath,".*") # gets the file name without extension
+    extension = File.extname(filepath) # gets the extension of the file
+    path = File.dirname(filepath) # gets the path of the file without the file
 
-    #puts param
+    case action
+    
+    # when "graph"
+      
+    #   width = 1280
+    #   height = 720
+    #   margin = 32
+      
+    #   drawing = [
+    #     draw.header(width, height),
+    #     draw.background(width, height, colors.gray_dark),
+    #     draw.draw_polyline(data1, width, height, margin, colors.magenta),
+    #     draw.draw_polyline(data2, width, height, margin, colors.blue_light),
+    #     draw.draw_scale(width, height, margin, colors.gray_lightest),
+    #     draw.draw_text("Grabelshpouet", colors.magenta,"50%", height-margin/2, colors.gray_dark),
+    #     draw.footer
+    #   ]
+    #   write_to_file("Apps/draw/","test.svg", assemble(drawing))
 
-    case param.first.strip.downcase
-    when "graph"
-        drawing = [
-        draw.header(width, height),
-        draw.background(width, height, colors.gray_dark),
-        draw.draw_polyline(data1, width, height, margin, colors.magenta),
-        draw.draw_polyline(data2, width, height, margin, colors.blue_light),
-        draw.draw_scale(width, height, margin, colors.gray_lightest),
-        draw.draw_text("Grabelshpouet", colors.magenta,"50%", height-margin/2, colors.gray_dark),
-        draw.footer
-      ]
-      write_to_file("Apps/draw/","test.svg", assemble(drawing))
-      return "done!"
+    #   return "done!"
 
-    when "globe"
-      return "globe!"
+    # when "globe"
+     
+    #   return "globe!"
+
     when "normals"
+      
       load("Apps/draw/normal_map.rb")
-      normals = Normal_map.new
-      map = normals.create(1024, 1024)
-      write_to_file("Apps/draw/","normals.svg", assemble(map))
+      normals = Draw_Uvs.new
+      map = normals.create(1024, 1024, path, file)
+      write_to_file(
+        path,"#{name}_Normals.svg", 
+        assemble(map)
+        )
       return "done normals!"
+
     when "read"
+      
       load("Apps/draw/svgread.rb")
-      # payload
       reader = SVG_read.new
-      content = reader.read
-      write_to_file("Apps/draw/","svg_read.json", JSON.pretty_generate(content))
-      # puts content
+      content = reader.read(path, file)
+      write_to_file(
+        path,"#{name}.json", 
+        JSON.pretty_generate(content)
+        )
       return "done reading!"
-    when "uvs"
-      uv_mapper = Draw_Uvs.new
-      uvs = uv_mapper.create(1024,1024)
-      write_to_file("Apps/draw/","uvs.svg", assemble(uvs))
-      return "done uvs!"
+
+    # when "uvs"
+      
+    #   uv_mapper = Draw_Uvs.new
+    #   uvs = uv_mapper.create(1024,1024)
+    #   write_to_file("Apps/draw/","uvs.svg", assemble(uvs))
+    #   return "done uvs!"
+
     else
+      
       return "please specify something to draw"
+
     end
 
-    #return "done!"
-
   end
+
 
   def assemble lines
     
@@ -81,9 +100,9 @@ class Draw
   
   end
 
-  def write_to_file path, file_name, data
 
-    File.open("#{path}#{file_name}", "w") do |file|
+  def write_to_file path, file_name, data
+    File.open("#{path}/#{file_name}", "w") do |file|
       file.write(data)    
     end
 

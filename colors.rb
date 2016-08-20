@@ -31,4 +31,9 @@ class Colors
   def down_left; return "#3636ca" end
   def down_right; return "#ca36ca" end
 
+  def normals x, y
+    
+    return "##{}"
+  end
+
 end

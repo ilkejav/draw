@@ -33,18 +33,18 @@ class Normal_map
 
 	def box posx, posy, width, height, bevel, bleed
 		points = {
-			:topleft => [						posx,								posy],
-			:topright => [					posx+width, 				posy],
-			:bottomleft => [				posx, 							posy+height],
-			:bottomright => [				posx+width, 				posy+height],
-			:bleedtopleft => [			posx-bleed, 				posy-bleed],
-			:bleedtopright => [			posx+width+bleed, 	posy-bleed],
-			:bleedbottomleft => [		posx-bleed, 				posy+height+bleed],
-			:bleedbottomright => [	posx+width+bleed, 	posy+height+bleed],
-			:beveltopleft => [			posx+bevel, 				posy+bevel],
-			:beveltopright => [			posx+width-bevel, 	posy+bevel],
-			:bevelbottomleft => [		posx+bevel, 				posy+height-bevel],
-			:bevelbottomright => [	posx+width-bevel, 	posy+height-bevel],
+			:topleft => [						posx,							posy],
+			:topright => [					posx+width, 			posy],
+			:bottomleft => [				posx, 						posy+height],
+			:bottomright => [				posx+width, 			posy+height],
+			:bleedtopleft => [			posx-bleed, 			posy-bleed],
+			:bleedtopright => [			posx+width+bleed, posy-bleed],
+			:bleedbottomleft => [		posx-bleed, 			posy+height+bleed],
+			:bleedbottomright => [	posx+width+bleed, posy+height+bleed],
+			:beveltopleft => [			posx+bevel, 			posy+bevel],
+			:beveltopright => [			posx+width-bevel, posy+bevel],
+			:bevelbottomleft => [		posx+bevel, 			posy+height-bevel],
+			:bevelbottomright => [	posx+width-bevel, posy+height-bevel],
 		}
 		up = [	
 			points[:bleedtopleft],
