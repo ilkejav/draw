@@ -43,17 +43,14 @@ class SVG_draw
     return format.wrap(format.build(name,bkg))
   end
 
-  def draw_text text, color, posx, posy, outlinecolor
+  def draw_text text, color, posx, posy
     name = "text"
     txt = [
       ["x", posx],
       ["y", posy],
       ["fill",color],
       ["font-family","Ubuntu Mono"],
-      ["font-size",12],
-      ["stroke-width", 2],
-      ["stroke", outlinecolor],
-      ["paint-order", "stroke"],
+      ["font-size",9],
       ["text-anchor", "middle"],
       ["alignment-baseline", "central"]
     ]

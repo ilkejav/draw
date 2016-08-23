@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bleedtop",
+				"bleedtopright"
+			],
+			[
 				"uv",
 				"uv_mapper"
 			],
@@ -251,7 +255,15 @@
 			"file": "draw.rb",
 			"settings":
 			{
-				"buffer_size": 2557,
+				"buffer_size": 2369,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "svgdraw.rb",
+			"settings":
+			{
+				"buffer_size": 2960,
 				"line_ending": "Windows"
 			}
 		},
@@ -259,31 +271,23 @@
 			"file": "draw_uvs.rb",
 			"settings":
 			{
-				"buffer_size": 1516,
+				"buffer_size": 1722,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Briques/bricks.json",
+			"file": "normal_map.rb",
 			"settings":
 			{
-				"buffer_size": 1069,
+				"buffer_size": 11045,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/germain/Work/castlestory-game/Bin/network.bat",
+			"file": "/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Plugs/plugs.json",
 			"settings":
 			{
-				"buffer_size": 4309,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "svgread.rb",
-			"settings":
-			{
-				"buffer_size": 1870,
+				"buffer_size": 2689,
 				"line_ending": "Windows"
 			}
 		}
@@ -337,10 +341,16 @@
 	],
 	"file_history":
 	[
+		"/C/Github/core/main.rb",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Plugs/plugs.json",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Plugs/plugs_Normals.svg",
+		"/C/Github/core/Apps/draw/svgread.rb",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Briques/bricks.json",
+		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Plugs/Plugs.svg",
+		"/C/Users/germain/Work/castlestory-game/Bin/network.bat",
 		"/C/Github/core/Apps/draw/colors.rb",
 		"/C/Github/core/Apps/draw/normal_map.rb",
 		"/C/Github/core/core.rb",
-		"/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Briques/bricks.json",
 		"/C/Github/core/Apps/draw/svgdraw.rb",
 		"/C/Github/core/Apps/draw/svg_read.json",
 		"/C/Users/germain/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -458,13 +468,7 @@
 		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/BreadBar/BreadBarDriver.cs",
 		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/BreadBar/BreadBarCrumbContext.cs",
 		"/C/Users/germain/Work/castlestory-game/Assets/Sonic Ether/SESSAO/Editor/SESSAOEditor.cs",
-		"/C/Users/germain/Work/castlestory-game/Resources/unity_builtin_extra",
-		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/AnimsAndStuff/SplashScreen.cs",
-		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Components/LodMaterialList.cs",
-		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/OverHeadDisplay/OverheadDisplay.cs",
-		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/UI/InputModeDisplay/InputModeDisplay.cs",
-		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Damage/PlacedBlockDamageReceiver.cs",
-		"/C/Users/germain/Work/castlestory-game/Assets/Standard Assets/Brix/Game/Components/ExplosionGameplay.cs"
+		"/C/Users/germain/Work/castlestory-game/Resources/unity_builtin_extra"
 	],
 	"find":
 	{
@@ -484,6 +488,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sx+width+bleed2, posy-bleed2 ]\n				points[:bleedtopleft] = [ posx-",
+			"\n				points[:bleedtopleft] = [ posx-bleed2, posy-bleed2 ]",
+			"points[:bleedtopright] = [ posx+width+bleed2, posy-bleed2 ]\n				points[:blee",
 			"-rando..rando",
 			"(-rando..rando)",
 			"new",
@@ -616,15 +623,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2557,
+						"buffer_size": 2369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1698,
-								1698
+								2018,
+								2018
 							]
 						],
 						"settings":
@@ -634,27 +641,57 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "draw_uvs.rb",
+					"file": "svgdraw.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1516,
+						"buffer_size": 2960,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								667,
-								667
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "draw_uvs.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1216,
+								1216
 							]
 						],
 						"settings":
@@ -662,27 +699,56 @@
 							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Briques/bricks.json",
+					"buffer": 3,
+					"file": "normal_map.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1069,
+						"buffer_size": 11045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								438,
-								438
+								9847,
+								9847
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3647.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Dropbox (Sauropod Studio)/Castle Story/Users/Germain/Travail/Modeling/Blocks/Briques/Plugs/plugs.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2620,
+								2620
 							]
 						],
 						"settings":
@@ -692,75 +758,12 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2394.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/germain/Work/castlestory-game/Bin/network.bat",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4309,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10,
-								1
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "svgread.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1870,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1284,
-								1284
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -781,18 +784,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":

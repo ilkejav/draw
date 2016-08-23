@@ -74,13 +74,6 @@ class Draw
         )
       return "done reading!"
 
-    # when "uvs"
-      
-    #   uv_mapper = Draw_Uvs.new
-    #   uvs = uv_mapper.create(1024,1024)
-    #   write_to_file("Apps/draw/","uvs.svg", assemble(uvs))
-    #   return "done uvs!"
-
     else
       
       return "please specify something to draw"
