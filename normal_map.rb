@@ -180,18 +180,18 @@ class Normal_map
 			points.dig(	:topright, 		:edge1	)
 		]
 		edge_left = [
-			points.dig(	:bottomright, :bleed1	),
-			points.dig(	:bottomleft, 	:bleed2	),
-			points.dig(	:bottomleft, 	:edge2	),
-			utils.spread_random( points.dig(:bottomleft,:bevel2), points.dig(:bottomright,:bevel1), rand(0..3), randomness ),
-			points.dig(	:bottomright, :edge1	)
-		]
-		edge_bottom = [
 			points.dig(	:bottomleft, 	:bleed1	),
 			points.dig(	:topleft, 		:bleed2	),
 			points.dig(	:topleft, 		:edge2	),
 			utils.spread_random( points.dig(:topleft,:bevel2), points.dig(:bottomleft,:bevel1), rand(0..3), randomness ),
 			points.dig(	:bottomleft, 	:edge1	)
+		]
+		edge_bottom = [
+			points.dig(	:bottomright, :bleed1	),
+			points.dig(	:bottomleft, 	:bleed2	),
+			points.dig(	:bottomleft, 	:edge2	),
+			utils.spread_random( points.dig(:bottomleft,:bevel2), points.dig(:bottomright,:bevel1), rand(0..3), randomness ),
+			points.dig(	:bottomright, :edge1	)
 		]
 
 		drawing = [
@@ -230,20 +230,20 @@ class Normal_map
 				points[:beveltopleft] = [			posx+bevel, 				posy-bleed2 				]
 				points[:beveltopright] = [ 		posx+width-bevel, 	posy-bleed2 				]
 			when "right"
-				points[:bleedtopright] = [ 		posx+width+bleed2, 	posy-bleed 				]
-				points[:bleedbottomright] = [ posx+width+bleed2, 	posy+height+bleed 	]
-				points[:beveltopright] = [ 		posx+width-bevel2, 	posy+bevel 				]
-				points[:bevelbottomright] = [ posx+width-bevel2, 	posy+height-bevel 	]
+				points[:bleedtopright] = [ 		posx+width-bevel2, 	posy-bleed 				]
+				points[:bleedbottomright] = [ posx+width-bevel2, 	posy+height+bleed 	]
+				points[:beveltopright] = [ 		posx+width+bleed2, 	posy+bevel 				]
+				points[:bevelbottomright] = [ posx+width+bleed2, 	posy+height-bevel 	]
 			when "down"
-				points[:bleedbottomleft] = [ 	posx-bleed, 				posy+height+bevel2 	]
-				points[:bleedbottomright] = [ posx+width+bleed, 	posy+height+bevel2 	]
-				points[:bevelbottomleft] = [ 	posx+bevel, 				posy+height-bleed2 	]
-				points[:bevelbottomright] = [ posx+width-bevel, 	posy+height-bleed2 	]
+				points[:bleedbottomleft] = [ 	posx-bleed, 				posy+height-bleed2 	]
+				points[:bleedbottomright] = [ posx+width+bleed, 	posy+height-bleed2 	]
+				points[:bevelbottomleft] = [ 	posx+bevel, 				posy+height+bevel2 	]
+				points[:bevelbottomright] = [ posx+width-bevel, 	posy+height+bevel2 	]
 			when "left"
-				points[:bleedtopleft] = [ 		posx-bleed2, 				posy-bleed 					]
-				points[:bleedbottomleft] = [ 	posx-bleed2, 				posy+height+bleed 	]
-				points[:beveltopleft] = [ 		posx+bevel2, 				posy+bevel 					]
-				points[:bevelbottomleft] = [ 	posx+bevel2, 				posy+height-bevel 	]
+				points[:bleedtopleft] = [ 		posx+bevel2, 				posy-bleed 					]
+				points[:bleedbottomleft] = [ 	posx+bevel2, 				posy+height+bleed 	]
+				points[:beveltopleft] = [ 		posx-bleed2, 				posy+bevel 					]
+				points[:bevelbottomleft] = [ 	posx-bleed2, 				posy+height-bevel 	]
 		end
 
 		bg = [

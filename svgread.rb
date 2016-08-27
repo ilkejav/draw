@@ -36,7 +36,12 @@ class SVG_read
 				
 				when "M"
 					
-					c = coord[1..-1].split(",")
+					if coord[1..-1].include?(",")
+						c = coord[1..-1].split(",") # separate coordinates with comma
+					else
+						c = coord[1..-1].split(/(?=-)/) # sometimes there is no comma because there is a "-"
+					end
+
 					current_pos = [ c.first.to_i, c.last.to_i ]
 					if attr_index < 3
 						position = [ c.first.to_i, c.last.to_i ] 
@@ -44,7 +49,12 @@ class SVG_read
 
 				when "m"
 					
-					c = coord[1..-1].split(",")
+					if coord[1..-1].include?(",")
+						c = coord[1..-1].split(",")
+					else
+						c = coord[1..-1].split(/(?=-)/)
+					end
+
 					current_pos = [ current_pos[0] + c.first.to_i, current_pos[1] + c.last.to_i ]
 					if attr_index < 3
 						position = current_pos
@@ -83,9 +93,6 @@ class SVG_read
 				end
 
 			end
-
-			# puts "#{position} #{dimensions}"
-			# puts "#{dimensions}"
 
 			doc["shape#{shape_index}"] = {
 				"x" => position.first,

@@ -48,7 +48,7 @@ class Draw_Uvs
 				shape.last["width"],
 				shape.last["height"],
 				2, # bevel
-				2, # bleed
+				4, # bleed
 				4, # bevel2
 				4, # bleed2
 				shape.last["direction"]))# direction
@@ -64,7 +64,7 @@ class Draw_Uvs
 
 			drawing.push( draw.draw_text(
 				"#{shape.first}", 
-				"white", 
+				"black", 
 				shape.last["x"] + shape.last["width"]/2,
 				shape.last["y"] + shape.last["height"]/2))
 
