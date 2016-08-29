@@ -14,12 +14,16 @@
     "height": 93
   },
   "shape2": {
+    "type": "plank",
+    "direction": "horizontal",
     "x": 393,
     "y": 6,
     "width": 185,
     "height": 93
   },
   "shape3": {
+    "type": "corner",
+    "sides": [0,1,1,1],
     "x": 587,
     "y": 6,
     "width": 185,

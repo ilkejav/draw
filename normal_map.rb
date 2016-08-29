@@ -14,23 +14,6 @@ class Normal_map
 	def utils ; return @utils end
 	def colors; return @colors end
 
-	def create width, height
-	drawing = []
-	drawing.push(
-		box(512,512,256,256,8,4))
-	drawing.push(
-		draw.draw_wire_rect(512,512,256,256,"white"))
-	drawing.push(
-		brick(256,256,256,256,8,4,2,0.2))
-	drawing.push(
-		draw.draw_wire_rect(256,256,256,256,"white"))
-	drawing.unshift( draw.background(colors.normal) )
-	drawing.unshift( draw.header(width, height) )
-	drawing.push( draw.footer )
-		
-		return drawing.flatten
-	end
-
 	def box posx, posy, width, height, bevel, bleed
 		points = {
 			:topleft => [						posx,							posy],
@@ -286,14 +269,191 @@ class Normal_map
 		]
     
     drawing = []
-    drawing.push( draw.draw_polygon(	bg.flatten,			colors.normal 		) )
-    drawing.push( draw.draw_polygon(	up.flatten,			colors.down 		) ) unless direction.match "up"
-    drawing.push( draw.draw_polygon(	right.flatten,	colors.left 	) )	unless direction.match "right"
-    drawing.push( draw.draw_polygon(	down.flatten,		colors.up 	) )	unless direction.match "down"
-    drawing.push( draw.draw_polygon(	left.flatten,		colors.right 	) )	unless direction.match "left"
+    drawing.push( draw.draw_polygon(	bg,			colors.normal 		) )
+    drawing.push( draw.draw_polygon(	up,			colors.down 		) ) unless direction.match "up"
+    drawing.push( draw.draw_polygon(	right,	colors.left 	) )	unless direction.match "right"
+    drawing.push( draw.draw_polygon(	down,		colors.up 	) )	unless direction.match "down"
+    drawing.push( draw.draw_polygon(	left,		colors.right 	) )	unless direction.match "left"
 
 		return drawing
 	
+	end
+
+	def corner posx, posy, width, height, bevel, bleed, sides
+		points = {
+			:topleft => [						posx,							posy],
+			:topright => [					posx+width, 			posy],
+			:bottomleft => [				posx, 						posy+height],
+			:bottomright => [				posx+width, 			posy+height],
+			:bleedtopleft => [			posx-bleed, 			posy-bleed],
+			:bleedtopright => [			posx+width+bleed, posy-bleed],
+			:bleedbottomleft => [		posx-bleed, 			posy+height+bleed],
+			:bleedbottomright => [	posx+width+bleed, posy+height+bleed],
+			:beveltopleft => [			posx+bevel, 			posy+bevel],
+			:beveltopright => [			posx+width-bevel, posy+bevel],
+			:bevelbottomleft => [		posx+bevel, 			posy+height-bevel],
+			:bevelbottomright => [	posx+width-bevel, posy+height-bevel],
+		}
+		up = [	
+			points[:bleedtopleft],
+			points[:bleedtopright],
+			points[:topright],
+			points[:beveltopright],
+			points[:beveltopleft],
+			points[:topleft]
+		]
+		right = [	
+			points[:bleedtopright],
+			points[:bleedbottomright],
+			points[:bottomright],
+			points[:bevelbottomright],
+			points[:beveltopright],
+			points[:topright]
+		]
+		down = [	
+			points[:bleedbottomright],
+			points[:bleedbottomleft],
+			points[:bottomleft],
+			points[:bevelbottomleft],
+			points[:bevelbottomright],
+			points[:bottomright]
+		]
+		left = [	
+			points[:bleedbottomleft],
+			points[:bleedtopleft],
+			points[:topleft],
+			points[:beveltopleft],
+			points[:bevelbottomleft],
+			points[:bottomleft]
+		]
+		drawing = [
+      draw.draw_polygon(	up,			((sides[0] == 1) ? colors.up 		: colors.down		) ),
+      draw.draw_polygon(	right,	((sides[1] == 1) ? colors.right 	: colors.left	) ),
+      draw.draw_polygon(	down,		((sides[2] == 1) ? colors.down 	: colors.up			) ),
+      draw.draw_polygon(	left,		((sides[3] == 1) ? colors.left 	: colors.right	) )
+		]
+
+		return drawing
+	end
+
+	def plank posx, posy, width, height, direction, bevel, bleed
+
+		points = {
+			:topleft => [			posx,					posy],
+			:topright => [		posx+width, 	posy],
+			:bottomleft => [	posx, 				posy+height],
+			:bottomright => [	posx+width, 	posy+height]
+		}
+
+		edges = {
+			:top => [ 		posx, posy, 									posx + width, posy 					],
+			:right => [ 	posx + width, posy, 					posx + width, posy + height ],
+			:bottom => [	posx + width, posy + height, 	posx, posy + height 				],
+			:left => [ 		posx, posy + height, 					posx, posy]
+		}
+			
+
+		drawing = []
+			
+			drawing.push( box(posx,posy,width,height,bevel,bleed) )
+			
+			case direction
+			when "vertical"
+				rand(1..4).times do
+					pos = utils.lerp_2d(	points[:topleft],	points[:topright],	rand(0.0..1.0)	)
+					drawing.push( 
+						crack( pos[0].to_i, pos[1].to_i, (height*rand(0.1..0.5)).to_i, rand(1..4.0), "down", 0 )
+						)
+				end
+				rand(1..4).times do
+					pos = utils.lerp_2d(	points[:bottomleft],	points[:bottomright],	rand(0.0..1.0)	)
+					drawing.push( 
+						crack( pos[0].to_i, pos[1].to_i, (height*rand(0.1..0.5)).to_i, rand(1..4.0), "up", 0 )
+						)
+			end
+			
+			when "horizontal"
+				rand(1..4).times do
+					pos = utils.lerp_2d(	points[:topleft],	points[:bottomleft],	rand(0.0..1.0)	)
+					drawing.push( 
+						crack( pos[0].to_i, pos[1].to_i, (width*rand(0.1..0.5)).to_i, rand(1..4.0), "right", 0 )
+						)
+				end
+				rand(1..4).times do
+					pos = utils.lerp_2d(	points[:topright],	points[:bottomright],	rand(0.0..1.0)	)
+					drawing.push( 
+						crack( pos[0].to_i, pos[1].to_i, (width*rand(0.1..0.5)).to_i, rand(1..4.0), "left", 0 )
+						)
+				end
+			end
+
+		return drawing
+	end
+
+	def crack posx, posy, length, width, direction, randomness
+
+		points = {
+			:start => 		[	posx + width, 					posy					],
+			:end =>				[	posx + width - length, 	posy 					],
+			:edge1 =>			[	posx + width, 					posy + width	],
+			:edge2 =>			[	posx + width, 					posy - width	]
+		}
+		color1 = colors.up
+		color2 = colors.down
+
+		case direction
+		when "up"
+			points = {
+				:start => 	[	posx, 					posy						],
+				:end =>			[	posx, 					posy - length	],
+				:edge1 =>		[	posx - width, 	posy 					],
+				:edge2 =>		[	posx + width, 	posy 					]
+			}
+			color1 = colors.right
+			color2 = colors.left
+
+		when "right"
+			points = {
+				:start => 	[	posx, 					posy					],
+				:end =>			[	posx + length, 	posy 					],
+				:edge1 =>		[	posx, 					posy + width		],
+				:edge2 =>		[	posx, 					posy - width		]
+			}
+			color1 = colors.up
+			color2 = colors.down
+
+		when "down"
+			points = {
+				:start => 	[	posx, 					posy					],
+				:end =>			[	posx, 					posy + length	],
+				:edge1 =>		[	posx + width, 	posy 					],
+				:edge2 =>		[	posx - width, 	posy 					]
+			}
+			color1 = colors.left
+			color2 = colors.right
+
+		when "left"
+			# do nothing because points{} is already configured
+		end
+
+		side1 = [
+			points[:start],
+			points[:edge1],
+			points[:end]
+		]
+
+		side2 = [
+			points[:start],
+			points[:edge2],
+			points[:end]
+		]
+
+		drawing = [
+			draw.draw_polygon(	side1.flatten,	color1	),
+      draw.draw_polygon(	side2.flatten,	color2	)
+		]
+		# puts drawing
+		return drawing
 	end
 
 end

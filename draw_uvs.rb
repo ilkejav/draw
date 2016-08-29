@@ -9,16 +9,12 @@ class Draw_Uvs
 		@draw = SVG_draw.new
 		@utils = SVG_utils.new
 		@normals = Normal_map.new
-		# @content = File.new('Apps\draw\svg_read.json', 'r')
-  #   @shapes = JSON.load(@content)
     @colors = Colors.new
 	end
 
 	def draw ; return @draw end
 	def utils ; return @utils end
 	def normals ; return @normals end
-	# def content; return @content end
-	# def shapes; return @shapes end
 	def colors; return @colors end
 
 	def create width, height, path, file
@@ -40,6 +36,7 @@ class Draw_Uvs
 				4, # bleed
 				6, # chamfer
 				4))# randomness
+
 			when "indent"
 				# puts "indent"
 				drawing.push( normals.indent(
@@ -52,14 +49,36 @@ class Draw_Uvs
 				4, # bevel2
 				4, # bleed2
 				shape.last["direction"]))# direction
+
+			when "corner"
+				drawing.push( normals.corner(
+				shape.last["x"],
+				shape.last["y"],
+				shape.last["width"],
+				shape.last["height"],
+				4, 	# bevel
+				4, 	# bleed
+				shape.last["sides"]))# corners
+
+			when "plank"
+				puts "plank"
+				drawing.push( normals.plank(
+				shape.last["x"],
+				shape.last["y"],
+				shape.last["width"],
+				shape.last["height"],
+				shape.last["direction"],
+				4, 	# bevel
+				4)) 	# bleed
+
 			else
 				drawing.push( normals.box(
 				shape.last["x"],
 				shape.last["y"],
 				shape.last["width"],
 				shape.last["height"],
-				4, # bevel
-				4))# randomness
+				4, 	# bevel
+				4)) # bleed
 			end
 
 			drawing.push( draw.draw_text(
@@ -67,7 +86,7 @@ class Draw_Uvs
 				"black", 
 				shape.last["x"] + shape.last["width"]/2,
 				shape.last["y"] + shape.last["height"]/2))
-
+			
 		end
 
 		drawing.unshift( draw.background(colors.normal) )

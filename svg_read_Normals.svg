@@ -1,0 +1,81 @@
+<svg version="1.1" baseProfile="full" width="1024" height="1024" xmlns="http://www.w3.org/2000/svg" >
+<rect x="0" y="0" width="100%" height="100%" fill="#8080ff" />
+<polygon points="1 2, 15 2, 15 6, 15 10, 9 16, 5 16, 1 16" fill="#36caca" />
+<polygon points="15 2, 179 2, 179 6, 179 10, 125.33333333333334 12.0, 73.66666666666667 8.0, 15 10, 15 6" fill="#80dbda" />
+<polygon points="193 2, 193 16, 189 16, 185 16, 179 10, 179 6, 179 2" fill="#cacaca" />
+<polygon points="193 16, 193 89, 189 89, 185 89, 183.0 53.5, 185 16, 189 16" fill="#da80da" />
+<polygon points="1 103, 1 89, 5 89, 9 89, 15 95, 15 99, 15 103" fill="#3636ca" />
+<polygon points="179 103, 15 103, 15 99, 15 95, 179 95, 179 99" fill="#8026da" />
+<polygon points="193 103, 179 103, 179 99, 179 95, 185 89, 189 89, 193 89" fill="#ca36ca" />
+<polygon points="1 89, 1 16, 5 16, 9 16, 9 89, 5 89" fill="#2580da" />
+<text x="97" y="52" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape0</text>
+<polygon points="194 2, 387 2, 383 6, 379 10, 202 10, 198 6" fill="#80dbda" />
+<polygon points="387 2, 387 103, 383 99, 379 95, 379 10, 383 6" fill="#da80da" />
+<polygon points="387 103, 194 103, 198 99, 202 95, 379 95, 383 99" fill="#8026da" />
+<polygon points="194 103, 194 2, 198 6, 202 10, 202 95, 198 99" fill="#2580da" />
+<text x="290" y="52" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape1</text>
+<polygon points="389 2, 582 2, 578 6, 574 10, 397 10, 393 6" fill="#80dbda" />
+<polygon points="582 2, 582 103, 578 99, 574 95, 574 10, 578 6" fill="#da80da" />
+<polygon points="582 103, 389 103, 393 99, 397 95, 574 95, 578 99" fill="#8026da" />
+<polygon points="389 103, 389 2, 393 6, 397 10, 397 95, 393 99" fill="#2580da" />
+<polygon points="393 60, 393 61.90847296315549, 443 60" fill="#80dbda" />
+<polygon points="393 60, 393 58.09152703684451, 443 60" fill="#8026da" />
+<polygon points="393 27, 393 29.939754460578826, 479 27" fill="#80dbda" />
+<polygon points="393 27, 393 24.060245539421174, 479 27" fill="#8026da" />
+<polygon points="393 97, 393 100.10538335099628, 454 97" fill="#80dbda" />
+<polygon points="393 97, 393 93.89461664900372, 454 97" fill="#8026da" />
+<polygon points="393 61, 393 64.598276872127, 481 61" fill="#80dbda" />
+<polygon points="393 61, 393 57.401723127873, 481 61" fill="#8026da" />
+<polygon points="579.4998844283435 31, 579.4998844283435 32.49988442834357, 520.4998844283435 31" fill="#80dbda" />
+<polygon points="579.4998844283435 31, 579.4998844283435 29.50011557165643, 520.4998844283435 31" fill="#8026da" />
+<polygon points="580.612274741347 28, 580.612274741347 30.612274741347072, 514.612274741347 28" fill="#80dbda" />
+<polygon points="580.612274741347 28, 580.612274741347 25.387725258652928, 514.612274741347 28" fill="#8026da" />
+<polygon points="580.0959944805018 24, 580.0959944805018 26.095994480501744, 534.0959944805018 24" fill="#80dbda" />
+<polygon points="580.0959944805018 24, 580.0959944805018 21.904005519498256, 534.0959944805018 24" fill="#8026da" />
+<text x="485" y="52" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape2</text>
+<polygon points="[583, 2] [776, 2], [772, 6] [768, 10], [591, 10] [587, 6]" fill="#8026da" />
+<polygon points="[776, 2] [776, 103], [772, 99] [768, 95], [768, 10] [772, 6]" fill="#da80da" />
+<polygon points="[776, 103] [583, 103], [587, 99] [591, 95], [768, 95] [772, 99]" fill="#8026da" />
+<polygon points="[583, 103] [583, 2], [587, 6] [591, 10], [591, 95] [587, 99]" fill="#2580da" />
+<text x="679" y="52" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape3</text>
+<polygon points="778 2, 879 2, 875 6, 871 10, 786 10, 782 6" fill="#80dbda" />
+<polygon points="879 2, 879 103, 875 99, 871 95, 871 10, 875 6" fill="#da80da" />
+<polygon points="879 103, 778 103, 782 99, 786 95, 871 95, 875 99" fill="#8026da" />
+<polygon points="778 103, 778 2, 782 6, 786 10, 786 95, 782 99" fill="#2580da" />
+<text x="828" y="52" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape4</text>
+<polygon points="880 2, 981 2, 977 6, 973 10, 888 10, 884 6" fill="#80dbda" />
+<polygon points="981 2, 981 103, 977 99, 973 95, 973 10, 977 6" fill="#da80da" />
+<polygon points="981 103, 880 103, 884 99, 888 95, 973 95, 977 99" fill="#8026da" />
+<polygon points="880 103, 880 2, 884 6, 888 10, 888 95, 884 99" fill="#2580da" />
+<text x="930" y="52" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape5</text>
+<polygon points="513 104, 614 104, 610 108, 606 112, 521 112, 517 108" fill="#80dbda" />
+<polygon points="614 104, 614 205, 610 201, 606 197, 606 112, 610 108" fill="#da80da" />
+<polygon points="614 205, 513 205, 517 201, 521 197, 606 197, 610 201" fill="#8026da" />
+<polygon points="513 205, 513 104, 517 108, 521 112, 521 197, 517 201" fill="#2580da" />
+<text x="563" y="154" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape6</text>
+<polygon points="410 104, 511 104, 507 108, 503 112, 418 112, 414 108" fill="#80dbda" />
+<polygon points="511 104, 511 205, 507 201, 503 197, 503 112, 507 108" fill="#da80da" />
+<polygon points="511 205, 410 205, 414 201, 418 197, 503 197, 507 201" fill="#8026da" />
+<polygon points="410 205, 410 104, 414 108, 418 112, 418 197, 414 201" fill="#2580da" />
+<text x="460" y="154" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape7</text>
+<polygon points="308 104, 409 104, 405 108, 401 112, 316 112, 312 108" fill="#80dbda" />
+<polygon points="409 104, 409 205, 405 201, 401 197, 401 112, 405 108" fill="#da80da" />
+<polygon points="409 205, 308 205, 312 201, 316 197, 401 197, 405 201" fill="#8026da" />
+<polygon points="308 205, 308 104, 312 108, 316 112, 316 197, 312 201" fill="#2580da" />
+<text x="358" y="154" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape8</text>
+<polygon points="205 104, 307 104, 303 108, 299 112, 213 112, 209 108" fill="#80dbda" />
+<polygon points="307 104, 307 205, 303 201, 299 197, 299 112, 303 108" fill="#da80da" />
+<polygon points="307 205, 205 205, 209 201, 213 197, 299 197, 303 201" fill="#8026da" />
+<polygon points="205 205, 205 104, 209 108, 213 112, 213 197, 209 201" fill="#2580da" />
+<text x="256" y="154" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape9</text>
+<polygon points="103 104, 204 104, 200 108, 196 112, 111 112, 107 108" fill="#80dbda" />
+<polygon points="204 104, 204 205, 200 201, 196 197, 196 112, 200 108" fill="#da80da" />
+<polygon points="204 205, 103 205, 107 201, 111 197, 196 197, 200 201" fill="#8026da" />
+<polygon points="103 205, 103 104, 107 108, 111 112, 111 197, 107 201" fill="#2580da" />
+<text x="153" y="154" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape10</text>
+<polygon points="1 104, 102 104, 98 108, 94 112, 9 112, 5 108" fill="#80dbda" />
+<polygon points="102 104, 102 205, 98 201, 94 197, 94 112, 98 108" fill="#da80da" />
+<polygon points="102 205, 1 205, 5 201, 9 197, 94 197, 98 201" fill="#8026da" />
+<polygon points="1 205, 1 104, 5 108, 9 112, 9 197, 5 201" fill="#2580da" />
+<text x="51" y="154" fill="black" font-family="Ubuntu Mono" font-size="9" text-anchor="middle" alignment-baseline="central" >shape11</text>
+</svg>
