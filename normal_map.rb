@@ -336,13 +336,21 @@ class Normal_map
 		return drawing
 	end
 
-	def plank posx, posy, width, height, direction, bevel, bleed
+	def plank posx, posy, width, height, direction, bevel, bleed, randomness
 
 		points = {
-			:topleft => [			posx,					posy],
-			:topright => [		posx+width, 	posy],
-			:bottomleft => [	posx, 				posy+height],
-			:bottomright => [	posx+width, 	posy+height]
+			:topleft => [						posx,							posy],
+			:topright => [					posx+width, 			posy],
+			:bottomleft => [				posx, 						posy+height],
+			:bottomright => [				posx+width, 			posy+height],
+			:bleedtopleft => [			posx-bleed, 			posy-bleed],
+			:bleedtopright => [			posx+width+bleed, posy-bleed],
+			:bleedbottomleft => [		posx-bleed, 			posy+height+bleed],
+			:bleedbottomright => [	posx+width+bleed, posy+height+bleed],
+			:beveltopleft => [			posx+bevel, 			posy+bevel],
+			:beveltopright => [			posx+width-bevel, posy+bevel],
+			:bevelbottomleft => [		posx+bevel, 			posy+height-bevel],
+			:bevelbottomright => [	posx+width-bevel, posy+height-bevel],
 		}
 
 		edges = {
@@ -351,41 +359,74 @@ class Normal_map
 			:bottom => [	posx + width, posy + height, 	posx, posy + height 				],
 			:left => [ 		posx, posy + height, 					posx, posy]
 		}
-			
+		
+		up = [	
+			points[:bleedtopleft],
+			points[:bleedtopright],
+			points[:topright],
+			utils.spread_random( points[:beveltopright], points[:beveltopleft], rand(1..5), randomness ),
+			points[:topleft]
+		]
+		right = [	
+			points[:bleedtopright],
+			points[:bleedbottomright],
+			points[:bottomright],
+			utils.spread_random( points[:bevelbottomright], points[:beveltopright], rand(1..5), randomness ),
+			points[:topright]
+		]
+		down = [	
+			points[:bleedbottomright],
+			points[:bleedbottomleft],
+			points[:bottomleft],
+			utils.spread_random( points[:bevelbottomleft], points[:bevelbottomright], rand(1..5), randomness ),
+			points[:bottomright]
+		]
+		left = [	
+			points[:bleedbottomleft],
+			points[:bleedtopleft],
+			points[:topleft],
+			utils.spread_random( points[:beveltopleft], points[:bevelbottomleft], rand(1..5), randomness ),
+			points[:bottomleft]
+		]
 
 		drawing = []
 			
-			drawing.push( box(posx,posy,width,height,bevel,bleed) )
-			
-			case direction
-			when "vertical"
-				rand(1..4).times do
-					pos = utils.lerp_2d(	points[:topleft],	points[:topright],	rand(0.0..1.0)	)
-					drawing.push( 
-						crack( pos[0].to_i, pos[1].to_i, (height*rand(0.1..0.5)).to_i, rand(1..4.0), "down", 0 )
-						)
-				end
-				rand(1..4).times do
-					pos = utils.lerp_2d(	points[:bottomleft],	points[:bottomright],	rand(0.0..1.0)	)
-					drawing.push( 
-						crack( pos[0].to_i, pos[1].to_i, (height*rand(0.1..0.5)).to_i, rand(1..4.0), "up", 0 )
-						)
+		drawing = [
+      draw.draw_polygon(	up.flatten,			colors.up),
+      draw.draw_polygon(	right.flatten,	colors.right),
+      draw.draw_polygon(	down.flatten,		colors.down),
+      draw.draw_polygon(	left.flatten,		colors.left)
+		]
+		
+		case direction
+		when "vertical"
+			rand(1..4).times do
+				pos = utils.lerp_2d(	points[:beveltopleft],	points[:beveltopright],	rand(0.0..1.0)	)
+				drawing.push( 
+					crack( pos[0].to_i, pos[1].to_i, (height*rand(0.1..0.5)).to_i, rand(2..8.0), "down", 4 )
+					)
 			end
-			
-			when "horizontal"
-				rand(1..4).times do
-					pos = utils.lerp_2d(	points[:topleft],	points[:bottomleft],	rand(0.0..1.0)	)
-					drawing.push( 
-						crack( pos[0].to_i, pos[1].to_i, (width*rand(0.1..0.5)).to_i, rand(1..4.0), "right", 0 )
-						)
-				end
-				rand(1..4).times do
-					pos = utils.lerp_2d(	points[:topright],	points[:bottomright],	rand(0.0..1.0)	)
-					drawing.push( 
-						crack( pos[0].to_i, pos[1].to_i, (width*rand(0.1..0.5)).to_i, rand(1..4.0), "left", 0 )
-						)
-				end
+			rand(1..4).times do
+				pos = utils.lerp_2d(	points[:bevelbottomleft],	points[:bevelbottomright],	rand(0.0..1.0)	)
+				drawing.push( 
+					crack( pos[0].to_i, pos[1].to_i, (height*rand(0.1..0.5)).to_i, rand(2..8.0), "up", 4 )
+					)
+		end
+		
+		when "horizontal"
+			rand(1..4).times do
+				pos = utils.lerp_2d(	points[:beveltopleft],	points[:bevelbottomleft],	rand(0.0..1.0)	)
+				drawing.push( 
+					crack( pos[0].to_i, pos[1].to_i, (width*rand(0.1..0.5)).to_i, rand(2..8.0), "right", 4 )
+					)
 			end
+			rand(1..4).times do
+				pos = utils.lerp_2d(	points[:beveltopright],	points[:bevelbottomright],	rand(0.0..1.0)	)
+				drawing.push( 
+					crack( pos[0].to_i, pos[1].to_i, (width*rand(0.1..0.5)).to_i, rand(2..8.0), "left", 4 )
+					)
+			end
+		end
 
 		return drawing
 	end
@@ -436,16 +477,23 @@ class Normal_map
 			# do nothing because points{} is already configured
 		end
 
+		subdiv = rand(1..5)
+		seed = rand(0..1000)
+		Random.new( seed )
+		middle_edge = utils.spread_random( points[:end], points[:start], subdiv, randomness )
+		Random.new( seed )
+		edge1 = utils.spread_random( points[:edge1], points[:end], subdiv, randomness ),
+		Random.new( seed )
+		edge2 = utils.spread_random( points[:edge2], points[:end], subdiv, randomness ),
+		
 		side1 = [
-			points[:start],
-			points[:edge1],
-			points[:end]
+			edge1,
+			middle_edge
 		]
 
 		side2 = [
-			points[:start],
-			points[:edge2],
-			points[:end]
+			edge2,
+			middle_edge
 		]
 
 		drawing = [
