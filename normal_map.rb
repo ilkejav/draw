@@ -1,13 +1,14 @@
-require_relative("svgdraw.rb")
-require_relative("svgutils.rb")
-require_relative("colors.rb")
-
 class Normal_map
 
 	def initialize
+
+		load "Apps/draw/svgdraw.rb"
+		load "Apps/draw/svgutils.rb"
+		load "Apps/draw/colors.rb"
 		@draw = SVG_draw.new
 		@utils = SVG_utils.new
 		@colors = Colors.new
+		
 	end
 
 	def draw ; return @draw end
@@ -15,63 +16,15 @@ class Normal_map
 	def colors; return @colors end
 
 	def box posx, posy, width, height, bevel, bleed
-		points = {
-			:topleft => [						posx,							posy],
-			:topright => [					posx+width, 			posy],
-			:bottomleft => [				posx, 						posy+height],
-			:bottomright => [				posx+width, 			posy+height],
-			:bleedtopleft => [			posx-bleed, 			posy-bleed],
-			:bleedtopright => [			posx+width+bleed, posy-bleed],
-			:bleedbottomleft => [		posx-bleed, 			posy+height+bleed],
-			:bleedbottomright => [	posx+width+bleed, posy+height+bleed],
-			:beveltopleft => [			posx+bevel, 			posy+bevel],
-			:beveltopright => [			posx+width-bevel, posy+bevel],
-			:bevelbottomleft => [		posx+bevel, 			posy+height-bevel],
-			:bevelbottomright => [	posx+width-bevel, posy+height-bevel],
-		}
-		up = [	
-			points[:bleedtopleft],
-			points[:bleedtopright],
-			points[:topright],
-			points[:beveltopright],
-			points[:beveltopleft],
-			points[:topleft]
-		]
-		right = [	
-			points[:bleedtopright],
-			points[:bleedbottomright],
-			points[:bottomright],
-			points[:bevelbottomright],
-			points[:beveltopright],
-			points[:topright]
-		]
-		down = [	
-			points[:bleedbottomright],
-			points[:bleedbottomleft],
-			points[:bottomleft],
-			points[:bevelbottomleft],
-			points[:bevelbottomright],
-			points[:bottomright]
-		]
-		left = [	
-			points[:bleedbottomleft],
-			points[:bleedtopleft],
-			points[:topleft],
-			points[:beveltopleft],
-			points[:bevelbottomleft],
-			points[:bottomleft]
-		]
-		drawing = [
-      draw.draw_polygon(	up.flatten,			colors.up),
-      draw.draw_polygon(	right.flatten,	colors.right),
-      draw.draw_polygon(	down.flatten,		colors.down),
-      draw.draw_polygon(	left.flatten,		colors.left)
-		]
 
-		return drawing
+		load "Apps/draw/normals/Nbox.rb"
+		drawing = Nbox.new
+		return drawing.create(posx, posy, width, height, bevel, bleed)
+
 	end
 
 	def brick posx, posy, width, height, bevel, bleed, chamfer, randomness
+		
 		rando = chamfer * randomness
 		points = {
 			:topleft => {
@@ -479,12 +432,12 @@ class Normal_map
 
 		subdiv = rand(1..5)
 		seed = rand(0..1000)
-		Random.new( seed )
-		middle_edge = utils.spread_random( points[:end], points[:start], subdiv, randomness )
-		Random.new( seed )
-		edge1 = utils.spread_random( points[:edge1], points[:end], subdiv, randomness ),
-		Random.new( seed )
-		edge2 = utils.spread_random( points[:edge2], points[:end], subdiv, randomness ),
+		
+		middle_edge = utils.spread_random( points[:end], points[:start], subdiv, 0)
+		
+		edge1 = utils.spread_random( points[:edge1], points[:end], subdiv, 0),
+		
+		edge2 = utils.spread_random( points[:edge2], points[:end], subdiv, 0),
 		
 		side1 = [
 			edge1,
@@ -497,10 +450,10 @@ class Normal_map
 		]
 
 		drawing = [
-			draw.draw_polygon(	side1.flatten,	color1	),
+			# draw.draw_polygon(	side1.flatten,	color1	),
       draw.draw_polygon(	side2.flatten,	color2	)
 		]
-		# puts drawing
+
 		return drawing
 	end
 
