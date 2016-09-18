@@ -24,70 +24,70 @@ class Draw_Uvs
 
 		shapes.each do |shape|
 
-			shape_info = shape.last
+			s = shape.last
 			
-			case shape_info["type"]
+			case s["type"]
 
 			when "brick"
 				drawing.push( normals.brick(
-				shape_info["x"],
-				shape_info["y"],
-				shape_info["width"],
-				shape_info["height"],
-				4, # bevel
-				4, # bleed
-				6, # chamfer
-				4))# randomness
+					s["x"],
+					s["y"],
+					s["width"],
+					s["height"],
+					4, # bevel
+					4, # bleed
+					6, # chamfer
+					4))# randomness
 
 			when "indent"
 				# puts "indent"
 				drawing.push( normals.indent(
-				shape_info["x"],
-				shape_info["y"],
-				shape_info["width"],
-				shape_info["height"],
-				2, # bevel
-				4, # bleed
-				4, # bevel2
-				4, # bleed2
-				shape_info["direction"]))# direction
+					s["x"],
+					s["y"],
+					s["width"],
+					s["height"],
+					2, # bevel
+					4, # bleed
+					4, # bevel2
+					4, # bleed2
+					s["direction"]))# direction
 
 			when "corner"
 				drawing.push( normals.corner(
-				shape_info["x"],
-				shape_info["y"],
-				shape_info["width"],
-				shape_info["height"],
-				4, 	# bevel
-				4, 	# bleed
-				shape_info["sides"]))# corners
+					s["x"],
+					s["y"],
+					s["width"],
+					s["height"],
+					4, 	# bevel
+					4, 	# bleed
+					s["sides"]))# corners
 
 			when "plank"
 				drawing.push( normals.plank(
-				shape_info["x"],
-				shape_info["y"],
-				shape_info["width"],
-				shape_info["height"],
-				shape_info["direction"],
-				8, 	# bevel
-				0, 	# bleed
-				8))	# randomness
+					s["x"],
+					s["y"],
+					s["width"],
+					s["height"],
+					s["direction"],
+					8, 	# bevel
+					0, 	# bleed
+					8))	# randomness
 
 			else
 				drawing.push( normals.box(
-				shape_info["x"],
-				shape_info["y"],
-				shape_info["width"],
-				shape_info["height"],
-				4, 	# bevel
-				4)) # bleed
+					s["x"],
+					s["y"],
+					s["width"],
+					s["height"],
+					4, 	# bevel
+					4)) # bleed
 			end
 
 			drawing.push( draw.draw_text(
 				"#{shape.first}", 
 				"black", 
-				shape_info["x"] + shape_info["width"]/2,
-				shape_info["y"] + shape_info["height"]/2))
+				s["x"] + s["width"]/2,
+				s["y"] + s["height"]/2))
 			
 		end
 

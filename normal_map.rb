@@ -1,19 +1,8 @@
 class Normal_map
 
 	def initialize
-
-		# load "Apps/draw/svgdraw.rb"
-		# load "Apps/draw/svgutils.rb"
-		# load "Apps/draw/colors.rb"
-		# @draw = SVG_draw.new
-		# @utils = SVG_utils.new
-		# @colors = Colors.new
 		
 	end
-
-	# def draw ; return @draw end
-	# def utils ; return @utils end
-	# def colors; return @colors end
 
 	def box posx, posy, width, height, bevel, bleed
 
