@@ -1,11 +1,10 @@
-
 class Nbox
 
 	def initialize
 		
 		load "Apps/draw/svgdraw.rb"
-		# load "Apps/draw/svgutils.rb"
 		load "Apps/draw/colors.rb"
+		# load "Apps/draw/svgutils.rb"
 
 		@draw = SVG_draw.new
 		@utils = SVG_utils.new
@@ -14,8 +13,8 @@ class Nbox
   end
 
   def draw ; return @draw end
-	# def utils ; return @utils end
 	def colors; return @colors end
+	# def utils ; return @utils end
 
   def create posx, posy, width, height, bevel, bleed
 
