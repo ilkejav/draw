@@ -7,7 +7,7 @@ class Nbox
 		# load "Apps/draw/svgutils.rb"
 
 		@draw = SVG_draw.new
-		@utils = SVG_utils.new
+		# @utils = SVG_utils.new
 		@colors = Colors.new
 
   end
