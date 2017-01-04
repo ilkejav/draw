@@ -4,6 +4,10 @@ class SVG_utils
 
 	end
 
+  def lerp a, b, t
+    return ((1 - t) * a + t * b).round(2)
+  end
+
 	def lerp_2d pos1, pos2, progress
 		coords = []
 		coords[0] = ((1 - progress) * pos1[0] + progress * pos2[0]).round(2)
@@ -33,4 +37,49 @@ class SVG_utils
     return pts
   end
 
+  def spread_points width, height, offsetX, offsetY, scaleX, scaleY, points
+    pts = []
+    points.each_with_index do |point,i|
+      x = ((i.to_f/(scaleX-1)) * width).to_i + offsetX
+      y = height - ((point.to_f/scaleY) * height).to_i + offsetY
+      pts.push([x,y])
+    end
+    return pts
+  end
+
+  def find_biggest_value entries
+    v = []
+    entries.each do |entry|
+      max_value = entry.last["data"].max_by { |x| x }
+      v.push(max_value)
+    end
+    return v.max_by { |x| x }
+  end
+
+  def find_longest_set entries
+    v = []
+    entries.each do |entry|
+      v.push(entry.last["data"].count)
+    end
+    return v.max_by { |x| x }
+  end
+
+  def round_up number
+    divisor = 10 ** Math.log10(number).floor
+    i = number / divisor
+    remainder = number % divisor
+    if remainder == 0
+      i * divisor
+    else
+      (i + 1) * divisor
+    end
+  end
+
+  def find_position_in_rectangle bounds, progressX, progressY
+    coords = []
+      coords[0] = lerp(bounds[0], bounds[1], progressX)
+      coords[1] = lerp(bounds[2], bounds[3], progressY)
+    return coords
+  end
+  
 end

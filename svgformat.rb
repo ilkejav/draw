@@ -1,8 +1,8 @@
 class SVG_format
 
-  def initialize
+  # def initialize
 
-  end
+  # end
 
   def format a , b; return "#{a}=\"#{b}\" " end
   
