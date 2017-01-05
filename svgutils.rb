@@ -1,3 +1,6 @@
+require "json"
+require "date"
+
 class SVG_utils
 
 	def intitialize
@@ -80,6 +83,18 @@ class SVG_utils
       coords[0] = lerp(bounds[0], bounds[1], progressX)
       coords[1] = lerp(bounds[2], bounds[3], progressY)
     return coords
+  end
+
+  def find_latest_start_date entries
+    d = []
+    entries.each do |entry|
+      d.push(Date.parse(entry["start_date"]))
+    end
+    return d.max_by { |x| x }
+  end
+
+  def length_of_timeline entries
+
   end
   
 end

@@ -46,6 +46,7 @@ class Graph
 		max_value_all = utils.round_up( 
 			utils.find_biggest_value(shapes) )
 		longest_set = utils.find_longest_set(shapes)
+		length_of_timeline = utils.length_of_timeline(shapes)
 		
 		# draw grid
 		drawing.push(
@@ -127,11 +128,26 @@ class Graph
 				label.create("#{s["data"].first}",field_color, first_coords.first,first_coords.last, 12,"left","circle_dot"))
 
 			# show events
-			if s["events"]
+			if s["events"] && start_date
 				s["events"].each do |key,val|
 					event_date = Date.parse(key)
 					event_date_formatted = event_date.strftime('%d %b %Y')
 					# puts("#{event_date}  #{event_date_formatted}  #{val}")
+					time_from_start = start_date - event_date
+					event_position = utils.find_position_in_rectangle(
+						bounds,
+						time_from_start.to_f/longest_set,
+						1),
+
+					drawing.push(
+						label.create(
+							event_date_formatted,
+							field_color,
+							event_position.first,
+							event_position.last,
+							12,
+							"right",
+							"circle_dot"))
 				end
 			end
 
