@@ -2,21 +2,28 @@ class Dlabel
 
 	def initialize
 		load "Apps/draw/svgdraw.rb"
-		# load "Apps/draw/colors.rb"
+		load "Apps/draw/colors.rb"
 
 		@draw = SVG_draw.new
-		# @colors = Colors.new
+		@colors = Colors.new
 	end
 
 	def draw ; return @draw end
-	# def colors; return @colors end
+	def colors; return @colors end
 
-	def create text, color, posX, posY, size, alignment
+	def create text, color, posX, posY, size, alignment, style
 		drawing = []
 
-		drawing.push(
-			draw.draw_circle(posX, posY, 1.5, color))
-
+		case style
+		when "dot"
+			drawing.push(
+				draw.draw_circle(posX, posY, 1.5, color))
+		when "circle_dot"
+			drawing.push(
+				draw.draw_circle(posX, posY, 3, color))
+			drawing.push(
+				draw.draw_circle(posX, posY, 2, colors.gray_darkest))
+		end
 		case alignment
 		when "left"
 			drawing.push(

@@ -44,7 +44,8 @@ class Ggrid
 						colors.gray_dark,
 						x, height-margin,
 						12,
-						"bottom")
+						"bottom",
+						"dot")
 					)
 		end
 
@@ -67,7 +68,8 @@ class Ggrid
 						colors.gray_dark,
 						margin, y,
 						12,
-						"left")
+						"left",
+						"dot")
 					)
 		end
 

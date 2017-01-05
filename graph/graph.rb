@@ -60,7 +60,7 @@ class Graph
 
 		# show title
 		drawing.push(
-			draw.draw_text("Castle Story - WEEKLY ACTIVE USERS", colors.sequence(0), width/2, margin+24, 18, "middle")
+			draw.draw_text("Castle Story - WEEKLY ACTIVE USERS", colors.sequence(4), width/2, margin+24, 18, "middle")
 			)
 
 		# show each shape with its info
@@ -68,12 +68,12 @@ class Graph
 			
 			s = shape.last
 
+			field_color = colors.sequence(i+4)
+			
 			max_value_local = s["data"].max_by { |x| x }
 			max_value_position = s["data"].each_with_index.max[1]
 			start_date = Date.parse(s["start_date"]) if s["start_date"]
 			start_date_formatted = start_date.strftime('%d %b %Y') if start_date
-			
-			field_color = colors.sequence(i+4)
 
 			# show field name
 			# TODO create label list class
@@ -83,23 +83,19 @@ class Graph
 					legend,
 					field_color,
 					margin+24,
-					(margin+24 + i * 12), 12, "right")
+					(margin+24 + i * 12),
+					12,
+					"right",
+					"dot")
 				)
 
 			# show field plot line
 			data = s["data"]
 			drawing.push( 
-				line.create(
-					width, 
-					height, 
-					data, 
-					field_color,
-					longest_set,
-					max_value_all,
-					margin)
+				line.create(width, height, data, field_color, longest_set, max_value_all, margin)
 			)
 			
-			#show field max value
+			# show field max value
 			max_coords = utils.find_position_in_rectangle(
 				bounds,
 				max_value_position.to_f/longest_set,
@@ -111,27 +107,33 @@ class Graph
 					max_coords.first,
 					max_coords.last,
 					12,
-					"top"))
+					"top",
+					"dot"))
 
-			#show field last value
+			# show field last value
 			last_coords = utils.find_position_in_rectangle(
 				bounds,
 				(s["data"].length.to_f-1)/(longest_set-1),
 				s["data"].last.to_f/max_value_all)
 			drawing.push(
-				label.create("#{s["data"].last}",field_color, last_coords.first,last_coords.last, 12,"right"))
+				label.create("#{s["data"].last}",field_color, last_coords.first,last_coords.last, 12,"right","circle_dot"))
 			drawing.push(
 				draw.draw_polyline([[last_coords.first,last_coords.last],[last_coords.first,height-margin]],field_color,0.25,))
 
-			#show field first value
+			# show field first value
 			first_coords = utils.find_position_in_rectangle(
-				bounds,
-				0,
-				s["data"].first.to_f/max_value_all)
-			# firstX = utils.lerp(margin, width-margin, 0)
-			# firstY = utils.lerp(height-margin, margin, s["data"].first.to_f/max_value_all)
+				bounds, 0, s["data"].first.to_f/max_value_all)
 			drawing.push(
-				label.create("#{s["data"].first}",field_color, first_coords.first,first_coords.last, 12,"left"))
+				label.create("#{s["data"].first}",field_color, first_coords.first,first_coords.last, 12,"left","circle_dot"))
+
+			# show events
+			if s["events"]
+				s["events"].each do |key,val|
+					event_date = Date.parse(key)
+					event_date_formatted = event_date.strftime('%d %b %Y')
+					# puts("#{event_date}  #{event_date_formatted}  #{val}")
+				end
+			end
 
 		end
 

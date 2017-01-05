@@ -75,6 +75,7 @@ class SVG_draw
 			["points", format.coordinates(points.flatten)],
 			["stroke", color],
 			["stroke-width", weight],
+			# ["stroke-alignment", "left"], # TODO figure out how to align the stroke properly
 			["fill", "none"]
 		]
 		return format.wrap(format.build(name,ply))
