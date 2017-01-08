@@ -37,29 +37,29 @@ class Colors
 	#   return "##{}"
 	# end
 
-	def sequence index
+	def sequence index, precision
 		colors = [
-		"#673AB7",		# DeepPurple : #673AB7
-		"#3F51B5",		# Indigo : #3F51B5
-		"#2196F3",		# Blue: #2196F3
-		# "#03A9F4", 		# LightBlue : #03A9F4
-		"#00BCD4",		# Cyan : #00BCD4
-		# "#009688", 		# Teal : #009688
-		"#4CAF50",		# Green : #4CAF50
-		"#8BC34A", 			# LightGreen : #8BC34A
-		"#CDDC39",		# Lime : #CDDC39
-		# "#FFEB3B",		# Yellow : #FFEB3B
-		"#FFC107",		# Amber : #FFC107
-		"#FF9800",		# Orange : #FF9800
-		"#FF5722",		# DeepOrange : #FF5722
-		"#F44336",		# Red : #F44336
-		"#E91E63",		# Pink : #E91E63
-		"#9C27B0",		# Purple : #9C27B0
+		"#651FFF",		# DeepPurple : #673AB7
+		"#3D5AFE",		# Indigo : #3F51B5
+		"#2979FF",		# Blue: #2196F3
+		"#00B0FF", 		# LightBlue : #03A9F4
+		"#00E5FF",		# Cyan : #00BCD4
+		"#1DE9B6", 		# Teal : #009688
+		"#00E676",		# Green : #4CAF50
+		"#64DD17", 			# LightGreen : #8BC34A
+		"#C6FF00",		# Lime : #CDDC39
+		"#FFEA00",		# Yellow : #FFEB3B
+		"#FFC400",		# Amber : #FFC107
+		"#FF9100",		# Orange : #FF9800
+		"#FF3D00",		# DeepOrange : #FF5722
+		"#FF1744",		# Red : #F44336
+		"#F50057",		# Pink : #E91E63
+		"#D500F9",		# Purple : #9C27B0
 		# "#795548",		# Brown : #795548
 		# "#9E9E9E",		# Grey : #9E9E9E
 		# "#607D8B" 		# BlueGrey : #607D8B
 		]
-		return colors[index % 13]
+		return colors[index*precision % colors.length]
 	end
 
 end

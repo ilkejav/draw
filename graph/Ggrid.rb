@@ -22,19 +22,19 @@ class Ggrid
 	def format ; return @format end
 	def label; return @label end
 
-	def create width, height, margin, subX, subY, rangeX, rangeY
+	def create bounds, subX, subY, rangeX, rangeY
 		drawing = []
 		
 		(subX+1).to_i.times do |i|
 
 				x = utils.lerp(
-					margin, 
-					width-margin, 
+					bounds[0], 
+					bounds[1], 
 					(i.to_f/subX.to_f)
 					)
 				drawing.push(
 					draw.draw_polyline(
-					[[x,margin],[x,height-margin]],
+					[[x,bounds[2]],[x,bounds[3]]],
 					colors.gray_darker,
 					1
 					))
@@ -42,7 +42,7 @@ class Ggrid
 					label.create(
 						"#{(rangeX/subX)*i}",
 						colors.gray_dark,
-						x, height-margin,
+						x, bounds[3],
 						12,
 						"bottom",
 						"dot")
@@ -52,13 +52,13 @@ class Ggrid
 		(subY+1).times do |i|
 
 				y = utils.lerp(
-					height-margin, 
-					margin, 
+					bounds[3], 
+					bounds[2], 
 					(i.to_f/subY.to_f)
 					)
 				drawing.push(
 					draw.draw_polyline(
-					[[margin,y],[width-margin,y]],
+					[[bounds[0],y],[bounds[1],y]],
 					colors.gray_darker,
 					1
 					))
@@ -66,7 +66,7 @@ class Ggrid
 					label.create(
 						"#{(rangeY/subY)*i}",
 						colors.gray_dark,
-						margin, y,
+						bounds[0], y,
 						12,
 						"left",
 						"dot")
@@ -75,7 +75,7 @@ class Ggrid
 
 		drawing.push( 
 			draw.draw_wire_rect(
-				margin,margin,width-margin*2,height-margin*2,colors.gray))
+				bounds[0],bounds[2],bounds[1]-bounds[0],bounds[3]-bounds[2],colors.gray))
 
 		return drawing
 

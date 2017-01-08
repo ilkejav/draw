@@ -52,6 +52,9 @@ class SVG_draw
 			["font-family","Ubuntu Mono"],
 			["font-size",size],
 			["text-anchor", alignment],
+			# ["stroke-alignment","outside"],
+			# ["stroke","#000000"],
+			# ["stroke-width", 2],
 			["alignment-baseline", "central"]
 		]
 		return "#{format.tag(format.build(name,txt))}#{text}</text>"

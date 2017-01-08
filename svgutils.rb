@@ -11,6 +11,11 @@ class SVG_utils
     return ((1 - t) * a + t * b).round(2)
   end
 
+  def lerp_inverse a, b, x
+    return (x - a).to_f / (b - a).round(2)
+  end
+
+
 	def lerp_2d pos1, pos2, progress
 		coords = []
 		coords[0] = ((1 - progress) * pos1[0] + progress * pos2[0]).round(2)
@@ -81,20 +86,46 @@ class SVG_utils
   def find_position_in_rectangle bounds, progressX, progressY
     coords = []
       coords[0] = lerp(bounds[0], bounds[1], progressX)
-      coords[1] = lerp(bounds[2], bounds[3], progressY)
+      coords[1] = lerp(bounds[3], bounds[2], progressY)
     return coords
   end
 
-  def find_latest_start_date entries
-    d = []
-    entries.each do |entry|
-      d.push(Date.parse(entry["start_date"]))
+  def find_earliest_entry entries
+    d = {}
+    entries.each do |key,value|
+      d[key] = Date.parse(value["start_date"])
     end
-    return d.max_by { |x| x }
+    return d.min_by(&:last).first
   end
 
-  def length_of_timeline entries
-
+  def find_latest_entry entries
+    d = {}
+    entries.each do |key,value|
+      d[key] = Date.parse(value["start_date"])
+    end
+    return d.max_by(&:last).first
   end
+
+  def days_between date1, date2
+    return (Date.parse(date2) - Date.parse(date1)).to_i
+  end
+
+  def months_between date1, date2
+    return (date2.year * 12 + date2.month) - (date1.year * 12 + date1.month)
+  end
+
+  def offset_coordinates coords1, coord2
+    return [coords1,coord2].transpose.map {|x| x.reduce(:+)}
+  end
+
+  # def organize_entries_by_date
+
+  # end
+
+  # def length_of_timeline entries
+  #   earliest =
+  #   latest = 
+  #   return 
+  # end
   
 end

@@ -6,6 +6,7 @@ class Gline
 		load "Apps/draw/svgutils.rb"
 		load "Apps/draw/colors.rb"
 		# load "Apps/draw/svgformat.rb"
+		load "Apps/draw/graph/Gbounds.rb"
 
 		@draw = SVG_draw.new
 		@utils = SVG_utils.new
@@ -19,9 +20,19 @@ class Gline
 	def colors; return @colors end
 	# def format ; return @format end
 
-	def create width, height, data, color, value_count, max_value, margin
+	def create bounds, data, color, value_count, max_value, start
 		
-		points = [utils.spread_points(width - margin*2, height - margin*2, margin, margin, value_count, max_value, data)]
+		range = bounds
+
+		points = [
+			utils.spread_points(
+				range.width, 
+				range.height, 
+				range.left + start, 
+				range.top, 
+				range.rangeX, 
+				range.rangeY, 
+				data)]
 
 		drawing = [
 			draw.draw_polyline( points, colors.gray_darkest, 3),
