@@ -23,7 +23,10 @@ class Dlabel
 				draw.draw_circle(posX, posY, 3, color))
 			drawing.push(
 				draw.draw_circle(posX, posY, 2, colors.gray_darkest))
+		when "plain"
+			
 		end
+
 		case alignment
 		when "left"
 			drawing.push(

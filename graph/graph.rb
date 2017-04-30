@@ -13,12 +13,12 @@ class Graph
 		@utils = SVG_utils.new
 		@colors = Colors.new
 		load "Apps/draw/graph/Gline.rb"
-		load "Apps/draw/graph/Gscale.rb"
 		load "Apps/draw/graph/Ggrid.rb"
 		load "Apps/draw/graph/Gbounds.rb"
+		load "Apps/draw/graph/Ggraph.rb"
+		load "Apps/draw/graph/Gquery.rb"
 		load "Apps/draw/DLabel.rb"
 		@line = Gline.new
-		@scale = Gscale.new
 		@grid = Ggrid.new
 		@label = Dlabel.new
 	end
@@ -27,64 +27,64 @@ class Graph
 	def utils ; return @utils end
 	def colors; return @colors end
 	def line; return @line end
-	def scale; return @scale end
 	def grid; return @grid end
 	def label; return @label end
 
 	def create width, height, path, file
 		drawing = []
 
-		timeline = true
-
-		# margin = 64
-		margins = [64,64,512,72] # left, right, top, bottom
-		bounds = [
-			margins[0],
-			width-margins[1],
-			margins[2],
-			height-margins[3]]
+		timeline = false
 
 		shapes = JSON.load( File.new("#{path}/#{file}", 'r') )
 
-		# find X & Y dimensions of grid
-		max_value_all = utils.round_up( 
-			utils.find_biggest_value(shapes) )
-		longest_set = utils.find_longest_set(shapes)
-		earliest_entry = utils.find_earliest_entry(shapes)
-		earliest_date = Date.parse(shapes[earliest_entry]["start_date"])
-		latest_entry = utils.find_latest_entry(shapes)
-		end_of_latest_entry = 
-			Date.parse(shapes[latest_entry]["start_date"]).next_day(shapes[latest_entry]["data"].length)
+		# =======================
+		# find all relevant data
+		# =======================
+
+		query = Gquery.new(shapes)
+		max_value_all = query.max_value_all()
+		earliest_date = query.earliest_date()
+		latest_entry = query.latest_entry()
+		end_of_latest_entry = query.end_of_latest_entry()
 		
 		if timeline
-			length_of_timeline = 
-				utils.days_between(
-					earliest_date.to_s,
-					end_of_latest_entry.to_s # find a way to remove this unnecessary .to_s 
-					)
+			length_of_timeline = query.length_of_timeline()
 		else
-			length_of_timeline = longest_set
+			length_of_timeline = query.find_longest_set()
 		end
-		
-		range = Bounds.new(
-			[[margins[0],margins[2]],[width-margins[1],height-margins[3]]],
-			length_of_timeline,
-			max_value_all)
 
-		# draw grid
+		# ========================
+		# Create new graph object
+		# ========================
+
+		range = Bounds.new(
+			width, height,
+			[128,128,128,128], # margins left, right, top, bottom
+			length_of_timeline, # rangeX
+			query.max_value_all(), # rangeY,
+			[0,0])
+
+		canvas_left_right = 
+			range.divide_vertical(0.6,128,range.rangeX,range.rangeY,range.rangeX,range.rangeY)
+			p(canvas_left_right[0])
+			p(canvas_left_right[1])
+		
+		# draw graph grid & title
 		drawing.push(
-			grid.create(
-				bounds,
-				(length_of_timeline/utils.months_between(earliest_date,end_of_latest_entry)).to_i,
-				max_value_all/1000,
-				length_of_timeline,
-				max_value_all
+			Ggraph.new().create(
+				range,
+				query.length_of_timeline_months,
+				query.find_best_power_of_10,
+				"#{file}".split(".").first
 			))
 
-		# show title
-		drawing.push(
-			draw.draw_text("Castle Story - WEEKLY ACTIVE USERS", 
-				colors.sequence(6,1), range.lerp_horizontal(0.5), range.top+24, 18, "middle" ))
+		# drawing.push(
+		# 	Ggraph.new().create(
+		# 		canvas_left_right.last,
+		# 		query.length_of_timeline_months,
+		# 		query.find_best_power_of_10,
+		# 		"#{file}".split(".").first
+		# 	))
 
 		# show legend
 			# TODO create label list class
@@ -95,10 +95,16 @@ class Graph
 				else legend = "#{s["name"]}" 
 			end
 
+			if i == shapes.length - 1
+					label_color = colors.sequence(i+1,2)
+			else
+					label_color = colors.sequence(i+1,1)
+			end
+
 			drawing.push(
 				label.create(
 					legend,
-					colors.sequence(i+6,1),
+					label_color,
 					range.left + 18,
 					(range.top + 18 + i * 18),
 					12,
@@ -107,12 +113,18 @@ class Graph
 				)
 		end
 
-		# show each shape with its info
+		# ==============================
+		# draw each shape with its info
+		# ==============================
 		shapes.each_with_index do |shape,i|
 			
 			s = shape.last
 
-			field_color = colors.sequence(i+6,1)
+			if i == shapes.length - 1
+					field_color = colors.sequence(i+1,2)
+			else
+					field_color = colors.sequence(i+1,1)
+			end
 			
 			max_value_local = s["data"].max_by { |x| x }
 			max_value_position = s["data"].each_with_index.max[1]
@@ -130,7 +142,7 @@ class Graph
 			data = s["data"]
 
 			drawing.push( 
-				line.create(range, data, field_color, length_of_timeline, max_value_all,offset)
+				line.create(range, data, field_color, length_of_timeline, max_value_all,offset,"filled")
 			)
 
 			# show field max value
@@ -142,7 +154,7 @@ class Graph
 				label.create(
 					"#{max_value_local}", field_color,
 					max_coords.first, max_coords.last,
-					12, "top", "dot"))
+					10, "top", "dot"))
 
 			# show field last value
 			last_coords = utils.offset_coordinates(
@@ -150,7 +162,7 @@ class Graph
 				[offset,0])
 
 			drawing.push(
-				draw.draw_polyline([[last_coords.first,last_coords.last],[last_coords.first,bounds[3]]],field_color,0.25,))
+				draw.draw_polyline([[last_coords.first,last_coords.last],[last_coords.first,range.bottom]],field_color,0.25,))
 			drawing.push(
 				label.create("#{s["data"].last}",field_color, last_coords.first,last_coords.last, 10,"right","circle_dot"))
 
@@ -162,6 +174,10 @@ class Graph
 					label.create("#{s["data"].first}",field_color, range.left, first_coords, 10,"left","circle_dot"))
 			end
 
+			# ============================================
+			# for each shape, find & draw releated events
+			# ============================================
+
 			if s["events"]
 				s["events"].each do |key,val|
 					event_date = Date.parse(key)
@@ -170,6 +186,14 @@ class Graph
 					time_from_start = event_date - start_date
 					value_at_position = s["data"][time_from_start]
 					
+					biggest_value_after = range.locate_vertical(
+						s["data"][time_from_start..time_from_start+10].max_by { |x| x } - value_at_position
+						)
+					smallest_value_after = range.locate_vertical(
+						s["data"][time_from_start..time_from_start+10].min_by { |x| x } - value_at_position
+						)
+					# puts("#{biggest_value_after}  #{smallest_value_after}")
+
 					event_name = val
 					tag_direction = "top"
 					if val.is_a? (Array)
@@ -183,12 +207,12 @@ class Graph
 
 					drawing.push(
 						draw.draw_polyline(
-							[[event_pos[0],event_pos[1]],[event_pos[0],event_pos[1]-72]], # TODO create lineV and lineH classes
+							[[event_pos[0],event_pos[1]],[event_pos[0],biggest_value_after-24]], # TODO create lineV and lineH classes
 							field_color,
 							0.5,))
 
 					drawing.push(
-						label.create( event_name, field_color, event_pos[0], event_pos[1]-72, 12, tag_direction, "dot" ))
+						label.create( event_name, field_color, event_pos[0], biggest_value_after-24, 12, tag_direction, "dot" ))
 
 					drawing.push(
 						label.create( "", field_color, event_pos[0], event_pos[1], 12, "bottom", "circle_dot" ))

@@ -1,0 +1,19 @@
+sep=,
+Steam Sales data for Sauropod Studio: 2017-01-21 - 2017-01-21
+
+Date,Product(ID#),Product Name,Type,Game,Platform,Country Code,Country,Region,Gross Units Sold,Chargeback/Returns,Net Units Sold,Base Price,Sale Price,Currency,Gross Steam Sales (USD),Chargeback/Returns (USD),VAT/Tax (USD),Net Steam Sales (USD),Tag
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,BR,Brazil,Latin America,1,0,1,36.99,36.99,BRL,11.6175,0.0000,0.0000,11.6175,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,CA,Canada,North America,2,0,2,21.99,21.99,CAD,32.9640,0.0000,0.0000,32.9640,
+2017-01-21,26276,Castle Story,Retail,Castle Story,Windows,DE,Germany,Western Europe,1,0,1,0.00,0.00,USD,0.0000,0.0000,0.0000,0.0000,Humble Bundle
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,DE,Germany,Western Europe,1,1,0,19.99,19.99,EUR,21.2800,21.2800,0.0000,0.0000,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,DK,Denmark,Western Europe,1,0,1,19.99,19.99,EUR,21.2800,0.0000,-4.2581,17.0219,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,FR,France,Western Europe,8,0,8,19.99,19.99,EUR,170.2300,0.0000,-28.3575,141.8725,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,GB,United Kingdom,Western Europe,4,0,4,14.99,14.99,GBP,73.6367,0.0000,-12.2810,61.3557,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,HR,Croatia,Eastern Europe,1,1,0,19.99,19.99,EUR,21.2800,21.2800,0.0000,0.0000,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,NL,Netherlands,Western Europe,2,0,2,19.99,19.99,EUR,42.5579,0.0000,-7.3875,35.1704,
+2017-01-21,26276,Castle Story,Retail,Castle Story,Windows,PL,Poland,Eastern Europe,1,0,1,0.00,0.00,USD,0.0000,0.0000,0.0000,0.0000,Humble Bundle
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,PL,Poland,Eastern Europe,1,0,1,19.99,19.99,EUR,21.2800,0.0000,-3.9814,17.2986,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,SE,Sweden,Western Europe,1,0,1,19.99,19.99,EUR,21.2800,0.0000,-4.2581,17.0219,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Windows,US,United States,North America,11,1,10,19.99,19.99,USD,221.4300,19.9900,-1.5400,199.9000,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Mac,FR,France,Western Europe,1,0,1,19.99,19.99,EUR,21.2800,0.0000,-3.5449,17.7351,
+2017-01-21,26276,Castle Story,Steam,Castle Story,Mac,US,United States,North America,3,0,3,19.99,19.99,USD,59.9700,0.0000,0.0000,59.9700,

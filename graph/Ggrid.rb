@@ -64,7 +64,7 @@ class Ggrid
 					))
 				drawing.push(
 					label.create(
-						"#{(rangeY/subY)*i}",
+						"#{(rangeY/subY)*i}".to_i,
 						colors.gray_dark,
 						bounds[0], y,
 						12,

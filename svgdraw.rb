@@ -52,6 +52,7 @@ class SVG_draw
 			["font-family","Ubuntu Mono"],
 			["font-size",size],
 			["text-anchor", alignment],
+			# ["transform","rotate(30,#{posx},#{posy})"],
 			# ["stroke-alignment","outside"],
 			# ["stroke","#000000"],
 			# ["stroke-width", 2],
@@ -108,11 +109,12 @@ class SVG_draw
 		return format.wrap(format.build(name,rct))
 	end
 
-	def draw_polygon points, color
+	def draw_polygon points, color, opacity
 		name = "polygon"
 		rct = [
 			["points", format.coordinates(points)],
-			["fill", color]
+			["fill", color],
+			["fill-opacity", opacity]
 		]
 		return format.wrap(format.build(name,rct))
 	end
@@ -138,20 +140,5 @@ class SVG_draw
 		end
 		return pts
 	end
-
-	# def draw_grid width, height, margin, vdiv, hdiv
-		
-	# 	vdiv.times do
-	# 	end
-
-	# 	grd = [
-	# 		["d","M #{margin} #{margin} V #{height-margin}"],
-	# 		[]
-	# 	]
-	# end
-
-	# def lerp a, b, c
-		
-	# end
 
 end

@@ -1,0 +1,184 @@
+<svg version="1.1" baseProfile="full" width="1440" height="840" xmlns="http://www.w3.org/2000/svg" >
+<rect x="0" y="0" width="100%" height="100%" fill="#141411" />
+<polyline points="64.0 64, 64.0 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64.0" cy="768" r="1.5" fill="#383830" />
+<text x="64.0" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >0</text>
+<polyline points="93.16 64, 93.16 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="93.16" cy="768" r="1.5" fill="#383830" />
+<text x="93.16" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >1</text>
+<polyline points="122.31 64, 122.31 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="122.31" cy="768" r="1.5" fill="#383830" />
+<text x="122.31" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >2</text>
+<polyline points="151.47 64, 151.47 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="151.47" cy="768" r="1.5" fill="#383830" />
+<text x="151.47" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >3</text>
+<polyline points="180.62 64, 180.62 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="180.62" cy="768" r="1.5" fill="#383830" />
+<text x="180.62" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >4</text>
+<polyline points="209.78 64, 209.78 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="209.78" cy="768" r="1.5" fill="#383830" />
+<text x="209.78" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >5</text>
+<polyline points="238.93 64, 238.93 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="238.93" cy="768" r="1.5" fill="#383830" />
+<text x="238.93" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >6</text>
+<polyline points="268.09 64, 268.09 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="268.09" cy="768" r="1.5" fill="#383830" />
+<text x="268.09" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >7</text>
+<polyline points="297.24 64, 297.24 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="297.24" cy="768" r="1.5" fill="#383830" />
+<text x="297.24" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >8</text>
+<polyline points="326.4 64, 326.4 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="326.4" cy="768" r="1.5" fill="#383830" />
+<text x="326.4" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >9</text>
+<polyline points="355.56 64, 355.56 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="355.56" cy="768" r="1.5" fill="#383830" />
+<text x="355.56" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >10</text>
+<polyline points="384.71 64, 384.71 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="384.71" cy="768" r="1.5" fill="#383830" />
+<text x="384.71" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >11</text>
+<polyline points="413.87 64, 413.87 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="413.87" cy="768" r="1.5" fill="#383830" />
+<text x="413.87" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >12</text>
+<polyline points="443.02 64, 443.02 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="443.02" cy="768" r="1.5" fill="#383830" />
+<text x="443.02" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >13</text>
+<polyline points="472.18 64, 472.18 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="472.18" cy="768" r="1.5" fill="#383830" />
+<text x="472.18" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >14</text>
+<polyline points="501.33 64, 501.33 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="501.33" cy="768" r="1.5" fill="#383830" />
+<text x="501.33" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >15</text>
+<polyline points="530.49 64, 530.49 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="530.49" cy="768" r="1.5" fill="#383830" />
+<text x="530.49" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >16</text>
+<polyline points="559.64 64, 559.64 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="559.64" cy="768" r="1.5" fill="#383830" />
+<text x="559.64" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >17</text>
+<polyline points="588.8 64, 588.8 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="588.8" cy="768" r="1.5" fill="#383830" />
+<text x="588.8" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >18</text>
+<polyline points="617.96 64, 617.96 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="617.96" cy="768" r="1.5" fill="#383830" />
+<text x="617.96" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >19</text>
+<polyline points="647.11 64, 647.11 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="647.11" cy="768" r="1.5" fill="#383830" />
+<text x="647.11" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >20</text>
+<polyline points="676.27 64, 676.27 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="676.27" cy="768" r="1.5" fill="#383830" />
+<text x="676.27" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >21</text>
+<polyline points="705.42 64, 705.42 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="705.42" cy="768" r="1.5" fill="#383830" />
+<text x="705.42" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >22</text>
+<polyline points="734.58 64, 734.58 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="734.58" cy="768" r="1.5" fill="#383830" />
+<text x="734.58" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >23</text>
+<polyline points="763.73 64, 763.73 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="763.73" cy="768" r="1.5" fill="#383830" />
+<text x="763.73" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >24</text>
+<polyline points="792.89 64, 792.89 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="792.89" cy="768" r="1.5" fill="#383830" />
+<text x="792.89" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >25</text>
+<polyline points="822.04 64, 822.04 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="822.04" cy="768" r="1.5" fill="#383830" />
+<text x="822.04" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >26</text>
+<polyline points="851.2 64, 851.2 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="851.2" cy="768" r="1.5" fill="#383830" />
+<text x="851.2" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >27</text>
+<polyline points="880.36 64, 880.36 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="880.36" cy="768" r="1.5" fill="#383830" />
+<text x="880.36" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >28</text>
+<polyline points="909.51 64, 909.51 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="909.51" cy="768" r="1.5" fill="#383830" />
+<text x="909.51" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >29</text>
+<polyline points="938.67 64, 938.67 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="938.67" cy="768" r="1.5" fill="#383830" />
+<text x="938.67" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >30</text>
+<polyline points="967.82 64, 967.82 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="967.82" cy="768" r="1.5" fill="#383830" />
+<text x="967.82" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >31</text>
+<polyline points="996.98 64, 996.98 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="996.98" cy="768" r="1.5" fill="#383830" />
+<text x="996.98" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >32</text>
+<polyline points="1026.13 64, 1026.13 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1026.13" cy="768" r="1.5" fill="#383830" />
+<text x="1026.13" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >33</text>
+<polyline points="1055.29 64, 1055.29 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1055.29" cy="768" r="1.5" fill="#383830" />
+<text x="1055.29" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >34</text>
+<polyline points="1084.44 64, 1084.44 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1084.44" cy="768" r="1.5" fill="#383830" />
+<text x="1084.44" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >35</text>
+<polyline points="1113.6 64, 1113.6 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1113.6" cy="768" r="1.5" fill="#383830" />
+<text x="1113.6" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >36</text>
+<polyline points="1142.76 64, 1142.76 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1142.76" cy="768" r="1.5" fill="#383830" />
+<text x="1142.76" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >37</text>
+<polyline points="1171.91 64, 1171.91 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1171.91" cy="768" r="1.5" fill="#383830" />
+<text x="1171.91" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >38</text>
+<polyline points="1201.07 64, 1201.07 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1201.07" cy="768" r="1.5" fill="#383830" />
+<text x="1201.07" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >39</text>
+<polyline points="1230.22 64, 1230.22 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1230.22" cy="768" r="1.5" fill="#383830" />
+<text x="1230.22" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >40</text>
+<polyline points="1259.38 64, 1259.38 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1259.38" cy="768" r="1.5" fill="#383830" />
+<text x="1259.38" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >41</text>
+<polyline points="1288.53 64, 1288.53 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1288.53" cy="768" r="1.5" fill="#383830" />
+<text x="1288.53" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >42</text>
+<polyline points="1317.69 64, 1317.69 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1317.69" cy="768" r="1.5" fill="#383830" />
+<text x="1317.69" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >43</text>
+<polyline points="1346.84 64, 1346.84 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1346.84" cy="768" r="1.5" fill="#383830" />
+<text x="1346.84" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >44</text>
+<polyline points="1376.0 64, 1376.0 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1376.0" cy="768" r="1.5" fill="#383830" />
+<text x="1376.0" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >45</text>
+<polyline points="64 768.0, 1376 768.0" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="768.0" r="1.5" fill="#383830" />
+<text x="56" y="768.0" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >0</text>
+<polyline points="64 650.67, 1376 650.67" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="650.67" r="1.5" fill="#383830" />
+<text x="56" y="650.67" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >100</text>
+<polyline points="64 533.33, 1376 533.33" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="533.33" r="1.5" fill="#383830" />
+<text x="56" y="533.33" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >200</text>
+<polyline points="64 416.0, 1376 416.0" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="416.0" r="1.5" fill="#383830" />
+<text x="56" y="416.0" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >300</text>
+<polyline points="64 298.67, 1376 298.67" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="298.67" r="1.5" fill="#383830" />
+<text x="56" y="298.67" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >400</text>
+<polyline points="64 181.33, 1376 181.33" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="181.33" r="1.5" fill="#383830" />
+<text x="56" y="181.33" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >500</text>
+<polyline points="64 64.0, 1376 64.0" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="64.0" r="1.5" fill="#383830" />
+<text x="56" y="64.0" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >600</text>
+<rect x="64" y="64" width="1312" height="704" stroke="#595959" stroke-width="1" fill="none" />
+<text x="720.0" y="88" fill="#00E676" font-family="Ubuntu Mono" font-size="18" text-anchor="middle" alignment-baseline="central" >steamsalespastyear</text>
+<circle cx="82" cy="82" r="1.5" fill="#00E676" />
+<text x="90" y="82" fill="#00E676" font-family="Ubuntu Mono" font-size="12" text-anchor="start" alignment-baseline="central" >Net Sales: 02 Oct 2016</text>
+<circle cx="82" cy="100" r="1.5" fill="#64DD17" />
+<text x="90" y="100" fill="#64DD17" font-family="Ubuntu Mono" font-size="12" text-anchor="start" alignment-baseline="central" >Returns: 02 Oct 2016</text>
+<polyline points="64.0 546, 93.0 496, 123.0 470, 153.0 441, 183.0 465, 213.0 527, 242.0 614, 272.0 595, 302.0 594, 332.0 580, 362.0 568, 392.0 584, 421.0 573, 451.0 596, 481.0 530, 511.0 344, 541.0 239, 570.0 382, 600.0 462, 630.0 483, 660.0 431, 690.0 413, 720.0 402, 749.0 441, 779.0 452, 809.0 508, 839.0 631, 869.0 604, 898.0 530, 928.0 427, 958.0 540, 988.0 454, 1018.0 482, 1048.0 533, 1077.0 604, 1107.0 617, 1137.0 601, 1167.0 577, 1197.0 151, 1226.0 103, 1256.0 530, 1286.0 472, 1316.0 478, 1346.0 395, 1376.0 596" stroke="#141411" stroke-width="3" fill="none" />
+<polyline points="64.0 546, 93.0 496, 123.0 470, 153.0 441, 183.0 465, 213.0 527, 242.0 614, 272.0 595, 302.0 594, 332.0 580, 362.0 568, 392.0 584, 421.0 573, 451.0 596, 481.0 530, 511.0 344, 541.0 239, 570.0 382, 600.0 462, 630.0 483, 660.0 431, 690.0 413, 720.0 402, 749.0 441, 779.0 452, 809.0 508, 839.0 631, 869.0 604, 898.0 530, 928.0 427, 958.0 540, 988.0 454, 1018.0 482, 1048.0 533, 1077.0 604, 1107.0 617, 1137.0 601, 1167.0 577, 1197.0 151, 1226.0 103, 1256.0 530, 1286.0 472, 1316.0 478, 1346.0 395, 1376.0 596" stroke="#3D5AFE" stroke-width="1" fill="none" />
+<circle cx="1201.07" cy="102.72" r="1.5" fill="#3D5AFE" />
+<text x="1201.07" y="94.72" fill="#3D5AFE" font-family="Ubuntu Mono" font-size="10" text-anchor="middle" alignment-baseline="central" >567</text>
+<polyline points="1376.0 595.52, 1376.0 768" stroke="#3D5AFE" stroke-width="0.25" fill="none" />
+<circle cx="1376.0" cy="595.52" r="3" fill="#3D5AFE" />
+<circle cx="1376.0" cy="595.52" r="2" fill="#141411" />
+<text x="1384.0" y="595.52" fill="#3D5AFE" font-family="Ubuntu Mono" font-size="10" text-anchor="start" alignment-baseline="central" >147</text>
+<polyline points="64.0 747, 93.0 725, 123.0 725, 153.0 727, 183.0 707, 213.0 738, 242.0 740, 272.0 743, 302.0 733, 332.0 746, 362.0 738, 392.0 729, 421.0 720, 451.0 744, 481.0 733, 511.0 713, 541.0 688, 570.0 716, 600.0 719, 630.0 720, 660.0 704, 690.0 718, 720.0 713, 749.0 700, 779.0 706, 809.0 731, 839.0 744, 869.0 746, 898.0 737, 928.0 707, 958.0 737, 988.0 740, 1018.0 730, 1048.0 730, 1077.0 745, 1107.0 751, 1137.0 753, 1167.0 751, 1197.0 716, 1226.0 666, 1256.0 675, 1286.0 713, 1316.0 697, 1346.0 693, 1376.0 725" stroke="#141411" stroke-width="3" fill="none" />
+<polyline points="64.0 747, 93.0 725, 123.0 725, 153.0 727, 183.0 707, 213.0 738, 242.0 740, 272.0 743, 302.0 733, 332.0 746, 362.0 738, 392.0 729, 421.0 720, 451.0 744, 481.0 733, 511.0 713, 541.0 688, 570.0 716, 600.0 719, 630.0 720, 660.0 704, 690.0 718, 720.0 713, 749.0 700, 779.0 706, 809.0 731, 839.0 744, 869.0 746, 898.0 737, 928.0 707, 958.0 737, 988.0 740, 1018.0 730, 1048.0 730, 1077.0 745, 1107.0 751, 1137.0 753, 1167.0 751, 1197.0 716, 1226.0 666, 1256.0 675, 1286.0 713, 1316.0 697, 1346.0 693, 1376.0 725" stroke="#00E5FF" stroke-width="1" fill="none" />
+<circle cx="1201.07" cy="665.92" r="1.5" fill="#00E5FF" />
+<text x="1201.07" y="657.92" fill="#00E5FF" font-family="Ubuntu Mono" font-size="10" text-anchor="middle" alignment-baseline="central" >87</text>
+<polyline points="1376.0 724.59, 1376.0 768" stroke="#00E5FF" stroke-width="0.25" fill="none" />
+<circle cx="1376.0" cy="724.59" r="3" fill="#00E5FF" />
+<circle cx="1376.0" cy="724.59" r="2" fill="#141411" />
+<text x="1384.0" y="724.59" fill="#00E5FF" font-family="Ubuntu Mono" font-size="10" text-anchor="start" alignment-baseline="central" >37</text>
+</svg>

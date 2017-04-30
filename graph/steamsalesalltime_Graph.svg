@@ -1,0 +1,130 @@
+<svg version="1.1" baseProfile="full" width="1440" height="840" xmlns="http://www.w3.org/2000/svg" >
+<rect x="0" y="0" width="100%" height="100%" fill="#141411" />
+<polyline points="64.0 64, 64.0 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64.0" cy="768" r="1.5" fill="#383830" />
+<text x="64.0" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >0</text>
+<polyline points="107.73 64, 107.73 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="107.73" cy="768" r="1.5" fill="#383830" />
+<text x="107.73" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >5</text>
+<polyline points="151.47 64, 151.47 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="151.47" cy="768" r="1.5" fill="#383830" />
+<text x="151.47" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >10</text>
+<polyline points="195.2 64, 195.2 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="195.2" cy="768" r="1.5" fill="#383830" />
+<text x="195.2" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >15</text>
+<polyline points="238.93 64, 238.93 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="238.93" cy="768" r="1.5" fill="#383830" />
+<text x="238.93" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >20</text>
+<polyline points="282.67 64, 282.67 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="282.67" cy="768" r="1.5" fill="#383830" />
+<text x="282.67" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >25</text>
+<polyline points="326.4 64, 326.4 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="326.4" cy="768" r="1.5" fill="#383830" />
+<text x="326.4" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >30</text>
+<polyline points="370.13 64, 370.13 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="370.13" cy="768" r="1.5" fill="#383830" />
+<text x="370.13" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >35</text>
+<polyline points="413.87 64, 413.87 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="413.87" cy="768" r="1.5" fill="#383830" />
+<text x="413.87" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >40</text>
+<polyline points="457.6 64, 457.6 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="457.6" cy="768" r="1.5" fill="#383830" />
+<text x="457.6" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >45</text>
+<polyline points="501.33 64, 501.33 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="501.33" cy="768" r="1.5" fill="#383830" />
+<text x="501.33" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >50</text>
+<polyline points="545.07 64, 545.07 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="545.07" cy="768" r="1.5" fill="#383830" />
+<text x="545.07" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >55</text>
+<polyline points="588.8 64, 588.8 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="588.8" cy="768" r="1.5" fill="#383830" />
+<text x="588.8" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >60</text>
+<polyline points="632.53 64, 632.53 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="632.53" cy="768" r="1.5" fill="#383830" />
+<text x="632.53" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >65</text>
+<polyline points="676.27 64, 676.27 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="676.27" cy="768" r="1.5" fill="#383830" />
+<text x="676.27" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >70</text>
+<polyline points="720.0 64, 720.0 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="720.0" cy="768" r="1.5" fill="#383830" />
+<text x="720.0" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >75</text>
+<polyline points="763.73 64, 763.73 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="763.73" cy="768" r="1.5" fill="#383830" />
+<text x="763.73" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >80</text>
+<polyline points="807.47 64, 807.47 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="807.47" cy="768" r="1.5" fill="#383830" />
+<text x="807.47" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >85</text>
+<polyline points="851.2 64, 851.2 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="851.2" cy="768" r="1.5" fill="#383830" />
+<text x="851.2" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >90</text>
+<polyline points="894.93 64, 894.93 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="894.93" cy="768" r="1.5" fill="#383830" />
+<text x="894.93" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >95</text>
+<polyline points="938.67 64, 938.67 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="938.67" cy="768" r="1.5" fill="#383830" />
+<text x="938.67" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >100</text>
+<polyline points="982.4 64, 982.4 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="982.4" cy="768" r="1.5" fill="#383830" />
+<text x="982.4" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >105</text>
+<polyline points="1026.13 64, 1026.13 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1026.13" cy="768" r="1.5" fill="#383830" />
+<text x="1026.13" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >110</text>
+<polyline points="1069.87 64, 1069.87 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1069.87" cy="768" r="1.5" fill="#383830" />
+<text x="1069.87" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >115</text>
+<polyline points="1113.6 64, 1113.6 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1113.6" cy="768" r="1.5" fill="#383830" />
+<text x="1113.6" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >120</text>
+<polyline points="1157.33 64, 1157.33 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1157.33" cy="768" r="1.5" fill="#383830" />
+<text x="1157.33" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >125</text>
+<polyline points="1201.07 64, 1201.07 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1201.07" cy="768" r="1.5" fill="#383830" />
+<text x="1201.07" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >130</text>
+<polyline points="1244.8 64, 1244.8 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1244.8" cy="768" r="1.5" fill="#383830" />
+<text x="1244.8" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >135</text>
+<polyline points="1288.53 64, 1288.53 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1288.53" cy="768" r="1.5" fill="#383830" />
+<text x="1288.53" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >140</text>
+<polyline points="1332.27 64, 1332.27 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1332.27" cy="768" r="1.5" fill="#383830" />
+<text x="1332.27" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >145</text>
+<polyline points="1376.0 64, 1376.0 768" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="1376.0" cy="768" r="1.5" fill="#383830" />
+<text x="1376.0" y="776" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="middle" alignment-baseline="central" >150</text>
+<polyline points="64 768.0, 1376 768.0" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="768.0" r="1.5" fill="#383830" />
+<text x="56" y="768.0" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >0</text>
+<polyline points="64 533.33, 1376 533.33" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="533.33" r="1.5" fill="#383830" />
+<text x="56" y="533.33" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >1000</text>
+<polyline points="64 298.67, 1376 298.67" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="298.67" r="1.5" fill="#383830" />
+<text x="56" y="298.67" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >2000</text>
+<polyline points="64 64.0, 1376 64.0" stroke="#272822" stroke-width="1" fill="none" />
+<circle cx="64" cy="64.0" r="1.5" fill="#383830" />
+<text x="56" y="64.0" fill="#383830" font-family="Ubuntu Mono" font-size="12" text-anchor="end" alignment-baseline="central" >3000</text>
+<rect x="64" y="64" width="1312" height="704" stroke="#595959" stroke-width="1" fill="none" />
+<text x="720.0" y="88" fill="#00E676" font-family="Ubuntu Mono" font-size="18" text-anchor="middle" alignment-baseline="central" >steamsalesalltime</text>
+<circle cx="82" cy="82" r="1.5" fill="#00E676" />
+<text x="90" y="82" fill="#00E676" font-family="Ubuntu Mono" font-size="12" text-anchor="start" alignment-baseline="central" >Net Sales: 20 Sep 2013</text>
+<circle cx="82" cy="100" r="1.5" fill="#64DD17" />
+<text x="90" y="100" fill="#64DD17" font-family="Ubuntu Mono" font-size="12" text-anchor="start" alignment-baseline="central" >Returns: 20 Sep 2013</text>
+<polyline points="64.0 -4877, 72.0 -1172, 81.0 -177, 89.0 -32, 98.0 147, 106.0 242, 115.0 205, 124.0 -1947, 132.0 232, 141.0 500, 149.0 21, 158.0 -2649, 166.0 -2546, 175.0 369, 184.0 468, 192.0 510, 201.0 568, 209.0 564, 218.0 600, 226.0 614, 235.0 631, 244.0 643, 252.0 653, 261.0 673, 269.0 603, 278.0 676, 286.0 665, 295.0 659, 304.0 630, 312.0 564, 321.0 688, 329.0 673, 338.0 670, 346.0 -556, 355.0 551, 364.0 680, 372.0 625, 381.0 692, 389.0 690, 398.0 690, 407.0 682, 415.0 679, 424.0 676, 432.0 696, 441.0 699, 449.0 645, 458.0 638, 467.0 672, 475.0 667, 484.0 663, 492.0 676, 501.0 685, 509.0 703, 518.0 715, 527.0 688, 535.0 661, 544.0 551, 552.0 583, 561.0 650, 569.0 662, 578.0 664, 587.0 676, 595.0 676, 604.0 676, 612.0 682, 621.0 648, 629.0 708, 638.0 711, 647.0 706, 655.0 701, 664.0 715, 672.0 713, 681.0 715, 689.0 703, 698.0 720, 707.0 713, 715.0 719, 724.0 704, 732.0 703, 741.0 727, 750.0 712, 758.0 719, 767.0 715, 775.0 716, 784.0 726, 792.0 722, 801.0 723, 810.0 723, 818.0 732, 827.0 735, 835.0 732, 844.0 730, 852.0 739, 861.0 738, 870.0 740, 878.0 714, 887.0 730, 895.0 737, 904.0 718, 912.0 727, 921.0 739, 930.0 729, 938.0 646, 947.0 695, 955.0 731, 964.0 734, 972.0 741, 981.0 742, 990.0 744, 998.0 727, 1007.0 715, 1015.0 712, 1024.0 704, 1032.0 704, 1041.0 716, 1050.0 738, 1058.0 734, 1067.0 734, 1075.0 733, 1084.0 729, 1093.0 726, 1101.0 731, 1110.0 734, 1118.0 722, 1127.0 702, 1135.0 653, 1144.0 685, 1153.0 706, 1161.0 715, 1170.0 694, 1178.0 704, 1187.0 694, 1195.0 703, 1204.0 705, 1213.0 712, 1221.0 741, 1230.0 736, 1238.0 721, 1247.0 705, 1255.0 719, 1264.0 705, 1273.0 711, 1281.0 719, 1290.0 737, 1298.0 738, 1307.0 737, 1315.0 731, 1324.0 675, 1333.0 612, 1341.0 712, 1350.0 711, 1358.0 711, 1367.0 697, 1376.0 718" stroke="#141411" stroke-width="3" fill="none" />
+<polyline points="64.0 -4877, 72.0 -1172, 81.0 -177, 89.0 -32, 98.0 147, 106.0 242, 115.0 205, 124.0 -1947, 132.0 232, 141.0 500, 149.0 21, 158.0 -2649, 166.0 -2546, 175.0 369, 184.0 468, 192.0 510, 201.0 568, 209.0 564, 218.0 600, 226.0 614, 235.0 631, 244.0 643, 252.0 653, 261.0 673, 269.0 603, 278.0 676, 286.0 665, 295.0 659, 304.0 630, 312.0 564, 321.0 688, 329.0 673, 338.0 670, 346.0 -556, 355.0 551, 364.0 680, 372.0 625, 381.0 692, 389.0 690, 398.0 690, 407.0 682, 415.0 679, 424.0 676, 432.0 696, 441.0 699, 449.0 645, 458.0 638, 467.0 672, 475.0 667, 484.0 663, 492.0 676, 501.0 685, 509.0 703, 518.0 715, 527.0 688, 535.0 661, 544.0 551, 552.0 583, 561.0 650, 569.0 662, 578.0 664, 587.0 676, 595.0 676, 604.0 676, 612.0 682, 621.0 648, 629.0 708, 638.0 711, 647.0 706, 655.0 701, 664.0 715, 672.0 713, 681.0 715, 689.0 703, 698.0 720, 707.0 713, 715.0 719, 724.0 704, 732.0 703, 741.0 727, 750.0 712, 758.0 719, 767.0 715, 775.0 716, 784.0 726, 792.0 722, 801.0 723, 810.0 723, 818.0 732, 827.0 735, 835.0 732, 844.0 730, 852.0 739, 861.0 738, 870.0 740, 878.0 714, 887.0 730, 895.0 737, 904.0 718, 912.0 727, 921.0 739, 930.0 729, 938.0 646, 947.0 695, 955.0 731, 964.0 734, 972.0 741, 981.0 742, 990.0 744, 998.0 727, 1007.0 715, 1015.0 712, 1024.0 704, 1032.0 704, 1041.0 716, 1050.0 738, 1058.0 734, 1067.0 734, 1075.0 733, 1084.0 729, 1093.0 726, 1101.0 731, 1110.0 734, 1118.0 722, 1127.0 702, 1135.0 653, 1144.0 685, 1153.0 706, 1161.0 715, 1170.0 694, 1178.0 704, 1187.0 694, 1195.0 703, 1204.0 705, 1213.0 712, 1221.0 741, 1230.0 736, 1238.0 721, 1247.0 705, 1255.0 719, 1264.0 705, 1273.0 711, 1281.0 719, 1290.0 737, 1298.0 738, 1307.0 737, 1315.0 731, 1324.0 675, 1333.0 612, 1341.0 712, 1350.0 711, 1358.0 711, 1367.0 697, 1376.0 718" stroke="#3D5AFE" stroke-width="1" fill="none" />
+<circle cx="64.0" cy="-4877.38" r="1.5" fill="#3D5AFE" />
+<text x="64.0" y="-4885.38" fill="#3D5AFE" font-family="Ubuntu Mono" font-size="10" text-anchor="middle" alignment-baseline="central" >24057</text>
+<polyline points="1376.0 717.31, 1376.0 768" stroke="#3D5AFE" stroke-width="0.25" fill="none" />
+<circle cx="1376.0" cy="717.31" r="3" fill="#3D5AFE" />
+<circle cx="1376.0" cy="717.31" r="2" fill="#141411" />
+<text x="1384.0" y="717.31" fill="#3D5AFE" font-family="Ubuntu Mono" font-size="10" text-anchor="start" alignment-baseline="central" >216</text>
+<polyline points="64.0 765, 72.0 766, 81.0 766, 89.0 767, 98.0 766, 106.0 768, 115.0 766, 124.0 765, 132.0 767, 141.0 767, 149.0 767, 158.0 767, 166.0 766, 175.0 767, 184.0 766, 192.0 767, 201.0 768, 209.0 768, 218.0 768, 226.0 768, 235.0 768, 244.0 768, 252.0 768, 261.0 768, 269.0 768, 278.0 768, 286.0 768, 295.0 768, 304.0 768, 312.0 768, 321.0 768, 329.0 768, 338.0 768, 346.0 768, 355.0 768, 364.0 768, 372.0 768, 381.0 768, 389.0 768, 398.0 768, 407.0 768, 415.0 768, 424.0 768, 432.0 768, 441.0 768, 449.0 768, 458.0 768, 467.0 768, 475.0 768, 484.0 768, 492.0 768, 501.0 768, 509.0 768, 518.0 768, 527.0 768, 535.0 768, 544.0 768, 552.0 768, 561.0 768, 569.0 768, 578.0 768, 587.0 768, 595.0 768, 604.0 768, 612.0 768, 621.0 768, 629.0 768, 638.0 768, 647.0 768, 655.0 768, 664.0 768, 672.0 768, 681.0 768, 689.0 768, 698.0 768, 707.0 768, 715.0 761, 724.0 758, 732.0 762, 741.0 763, 750.0 763, 758.0 763, 767.0 764, 775.0 764, 784.0 767, 792.0 765, 801.0 765, 810.0 763, 818.0 765, 827.0 767, 835.0 766, 844.0 765, 852.0 765, 861.0 766, 870.0 765, 878.0 764, 887.0 763, 895.0 763, 904.0 764, 912.0 762, 921.0 764, 930.0 760, 938.0 758, 947.0 757, 955.0 762, 964.0 762, 972.0 763, 981.0 765, 990.0 764, 998.0 765, 1007.0 760, 1015.0 761, 1024.0 760, 1032.0 756, 1041.0 761, 1050.0 763, 1058.0 763, 1067.0 762, 1075.0 764, 1084.0 763, 1093.0 761, 1101.0 758, 1110.0 764, 1118.0 762, 1127.0 759, 1135.0 750, 1144.0 758, 1153.0 758, 1161.0 759, 1170.0 757, 1178.0 758, 1187.0 757, 1195.0 756, 1204.0 756, 1213.0 759, 1221.0 763, 1230.0 765, 1238.0 762, 1247.0 758, 1255.0 761, 1264.0 763, 1273.0 760, 1281.0 761, 1290.0 764, 1298.0 765, 1307.0 765, 1315.0 765, 1324.0 763, 1333.0 744, 1341.0 750, 1350.0 757, 1358.0 759, 1367.0 750, 1376.0 757" stroke="#141411" stroke-width="3" fill="none" />
+<polyline points="64.0 765, 72.0 766, 81.0 766, 89.0 767, 98.0 766, 106.0 768, 115.0 766, 124.0 765, 132.0 767, 141.0 767, 149.0 767, 158.0 767, 166.0 766, 175.0 767, 184.0 766, 192.0 767, 201.0 768, 209.0 768, 218.0 768, 226.0 768, 235.0 768, 244.0 768, 252.0 768, 261.0 768, 269.0 768, 278.0 768, 286.0 768, 295.0 768, 304.0 768, 312.0 768, 321.0 768, 329.0 768, 338.0 768, 346.0 768, 355.0 768, 364.0 768, 372.0 768, 381.0 768, 389.0 768, 398.0 768, 407.0 768, 415.0 768, 424.0 768, 432.0 768, 441.0 768, 449.0 768, 458.0 768, 467.0 768, 475.0 768, 484.0 768, 492.0 768, 501.0 768, 509.0 768, 518.0 768, 527.0 768, 535.0 768, 544.0 768, 552.0 768, 561.0 768, 569.0 768, 578.0 768, 587.0 768, 595.0 768, 604.0 768, 612.0 768, 621.0 768, 629.0 768, 638.0 768, 647.0 768, 655.0 768, 664.0 768, 672.0 768, 681.0 768, 689.0 768, 698.0 768, 707.0 768, 715.0 761, 724.0 758, 732.0 762, 741.0 763, 750.0 763, 758.0 763, 767.0 764, 775.0 764, 784.0 767, 792.0 765, 801.0 765, 810.0 763, 818.0 765, 827.0 767, 835.0 766, 844.0 765, 852.0 765, 861.0 766, 870.0 765, 878.0 764, 887.0 763, 895.0 763, 904.0 764, 912.0 762, 921.0 764, 930.0 760, 938.0 758, 947.0 757, 955.0 762, 964.0 762, 972.0 763, 981.0 765, 990.0 764, 998.0 765, 1007.0 760, 1015.0 761, 1024.0 760, 1032.0 756, 1041.0 761, 1050.0 763, 1058.0 763, 1067.0 762, 1075.0 764, 1084.0 763, 1093.0 761, 1101.0 758, 1110.0 764, 1118.0 762, 1127.0 759, 1135.0 750, 1144.0 758, 1153.0 758, 1161.0 759, 1170.0 757, 1178.0 758, 1187.0 757, 1195.0 756, 1204.0 756, 1213.0 759, 1221.0 763, 1230.0 765, 1238.0 762, 1247.0 758, 1255.0 761, 1264.0 763, 1273.0 760, 1281.0 761, 1290.0 764, 1298.0 765, 1307.0 765, 1315.0 765, 1324.0 763, 1333.0 744, 1341.0 750, 1350.0 757, 1358.0 759, 1367.0 750, 1376.0 757" stroke="#00E5FF" stroke-width="1" fill="none" />
+<circle cx="1324.88" cy="743.59" r="1.5" fill="#00E5FF" />
+<text x="1324.88" y="735.59" fill="#00E5FF" font-family="Ubuntu Mono" font-size="10" text-anchor="middle" alignment-baseline="central" >104</text>
+<polyline points="1376.0 756.03, 1376.0 768" stroke="#00E5FF" stroke-width="0.25" fill="none" />
+<circle cx="1376.0" cy="756.03" r="3" fill="#00E5FF" />
+<circle cx="1376.0" cy="756.03" r="2" fill="#141411" />
+<text x="1384.0" y="756.03" fill="#00E5FF" font-family="Ubuntu Mono" font-size="10" text-anchor="start" alignment-baseline="central" >51</text>
+</svg>

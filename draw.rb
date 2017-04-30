@@ -44,7 +44,7 @@ class Draw
 					)
 				return "done normals!"
 
-			when "read"
+			when "readsvg"
 				
 				load("Apps/draw/svgread.rb")
 				reader = SVG_read.new
@@ -54,6 +54,24 @@ class Draw
 					"#{name}.json", 
 					JSON.pretty_generate(content)
 					)
+				return "done reading!"
+
+			when "readcsv"	
+				
+				load("Apps/draw/read_csv.rb")
+				reader = Read_CSV.new
+				content = reader.convert(path, file)
+				# content2 = reader.count(path, file, "Date", ["Net Units Sold","Chargeback/Returns (USD)"])
+				write_to_file(
+					path,
+					"#{name}.json", 
+					JSON.pretty_generate(content)
+					)
+				# write_to_file(
+				# 	path,
+				# 	"#{name}_condensed.json", 
+				# 	JSON.pretty_generate(content2)
+				# 	)
 				return "done reading!"
 
 			else
